@@ -31,3 +31,29 @@ body {
     text-wrap: balance;
   }
 }
+
+/* Navbar to sit on top of the hero component */
+.navbar-container {
+  position: absolute;
+  padding-inline-start: 2.5rem;
+  padding-inline-end: 2.5rem;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 2;
+}
+
+/* Hero video to sit in viewport */
+.hero-wrapper {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+}
+
+.full-screen-video {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  /* opacity: 0.98; */
+}

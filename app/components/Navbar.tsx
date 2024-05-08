@@ -21,7 +21,7 @@ export default function Navbar() {
 
   return (
     <>
-      <nav className="md:flex md:justify-between md:items-center text-black ">
+      <nav className="md:flex md:justify-between md:items-center text-white navbar-container backdrop-blur-lg">
         <div className="flex justify-between items-center ps-4 sm:ps-2 md:ps-6 lg:ps-20 2xl:ps-96">
           <a href="#home">
             <Image
@@ -29,6 +29,7 @@ export default function Navbar() {
               width={220}
               height={85}
               alt="Company Logo"
+              priority={true}
             />
           </a>
           <span className="md:hidden pe-4">
