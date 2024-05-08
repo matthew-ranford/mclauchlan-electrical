@@ -30,3 +30,5 @@ export default function Hero() {
     </>
   )
 }
+
+// checkout height for when you rotate dimensions on phone,ipad etc. might have to move padding up a little bit - currently cutting off second piece of text

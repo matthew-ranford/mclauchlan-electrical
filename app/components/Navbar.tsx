@@ -22,7 +22,7 @@ export default function Navbar() {
   return (
     <>
       <nav className="md:flex md:justify-between md:items-center text-white navbar-container backdrop-blur-lg">
-        <div className="flex justify-between items-center ps-4 sm:ps-2 md:ps-6 lg:ps-20 2xl:ps-96">
+        <div className="flex justify-between items-center ps-4 sm:ps-2 md:ps-6">
           <a href="#home">
             <Image
               src="/images/logo.png"
@@ -47,7 +47,7 @@ export default function Navbar() {
           </span>
         </div>
         <ul
-          className={`md:flex md:items-center text-center gap-5 text-xl pt-5 md:pt-0 pe-0 md:pe-2 lg:pe-20 2xl:pe-96 pb-2 md:pb-0 ${
+          className={`md:flex md:items-center text-center gap-5 text-xl pt-5 md:pt-0 pe-0 md:pe-4 pb-2 md:pb-0 ${
             isOpen ? '' : 'hidden'
           }`}
         >
@@ -55,7 +55,7 @@ export default function Navbar() {
             <Link href={link.href} key={index}>
               <li
                 style={{ listStyle: 'none' }}
-                className="my-4 md:my-0 hover:text-yellow-600 hover:scale-105"
+                className="my-4 md:my-0 hover:text-amber-600 md:hover:scale-105"
               >
                 {link.text}
               </li>
