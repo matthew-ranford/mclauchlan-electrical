@@ -1,4 +1,19 @@
+import { TypewriterEffect } from '@/components/ui/typewrite-effect'
+
 export default function Hero() {
+  // TypeWriteEffect
+
+  const mainHeader = [
+    {
+      text: 'McLauchlan',
+      className: 'text-blue-900',
+    },
+    {
+      text: 'Eletrical',
+      className: 'text-amber-600',
+    },
+  ]
+
   return (
     <>
       <div className="hero-wrapper">
@@ -16,8 +31,8 @@ export default function Hero() {
           <source src="/video/hero-video.mp4" type="video/mp4" />
         </video>
         <div className="absolute pt-48 md:pt-72 2xl:pt-96 2xl:mt-56 px-8 md:px-16 2xl:px-60 ">
-          <h1 className="text-blue-900 text-5xl md:text-6xl 2xl:text-7xl md:text-left font-bold">
-            McLauchlan <span className="text-amber-600">Eletrical</span>
+          <h1>
+            <TypewriterEffect words={mainHeader} />
           </h1>
           <div className="text-white md:text-left text-2xl 2xl:text-3xl px-4 pt-6 space-y-6">
             <p>
