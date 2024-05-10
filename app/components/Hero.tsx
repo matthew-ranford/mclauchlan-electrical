@@ -1,8 +1,10 @@
+'use client'
+
 import { TypewriterEffect } from '@/components/ui/typewrite-effect'
+import { motion } from 'framer-motion'
 
 export default function Hero() {
   // TypeWriteEffect
-
   const mainHeader = [
     {
       text: 'McLauchlan',
@@ -35,10 +37,27 @@ export default function Hero() {
             <TypewriterEffect words={mainHeader} />
           </h1>
           <div className="text-white md:text-left text-2xl 2xl:text-3xl px-4 pt-6 space-y-6">
-            <p>
+            <motion.p
+              initial={{ opacity: 0, x: -20 }}
+              transition={{
+                duration: 1.8,
+                delay: 2.4,
+              }}
+              whileInView={{ x: 0, opacity: 1 }}
+            >
               Residential, Commercial, Marine & Industrial Contracting Company
-            </p>
-            <p>Providing electrical services to the Wellington region</p>
+            </motion.p>
+            <motion.p
+              initial={{ opacity: 0, x: -25 }}
+              transition={{
+                duration: 1.8,
+                delay: 3,
+              }}
+              whileInView={{ x: 0, opacity: 1 }}
+            >
+              Providing <span className="text-amber-600">electrical</span>{' '}
+              services to the Wellington region
+            </motion.p>
           </div>
         </div>
       </div>
