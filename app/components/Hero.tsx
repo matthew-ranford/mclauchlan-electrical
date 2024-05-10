@@ -44,13 +44,13 @@ export default function Hero() {
           <h1>
             <TypewriterEffect words={mainHeader} />
           </h1>
-          <div className="text-white md:text-left text-2xl 2xl:text-3xl px-4 pt-6 space-y-6">
+          <div className="text-white md:text-left text-2xl 2xl:text-3xl px-4 pt-6 space-y-6 2xl:space-y-10">
             <TextGenerateEffect words={paragraphOne} />
             <TextGenerateEffect words={paragraphTwo} initialDelay={3500} />
           </div>
 
           <motion.div
-            className="flex pt-10 md:pt-6 ps-2 space-x-6 md:space-x-10"
+            className="flex pt-10 md:pt-6 2xl:pt-10 ps-2 space-x-6 md:space-x-10"
             initial={{ opacity: 0, x: -30 }}
             transition={{
               duration: 1.8,
