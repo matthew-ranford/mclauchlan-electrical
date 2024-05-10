@@ -2,6 +2,7 @@
 
 import { TypewriterEffect } from '@/components/ui/typewriter-effect'
 import { MovingBorderButton } from '@/components/ui/moving-border'
+import { TextGenerateEffect } from '@/components/ui/text-generate-effect'
 import { motion } from 'framer-motion'
 
 export default function Hero() {
@@ -16,6 +17,12 @@ export default function Hero() {
       className: 'text-amber-600',
     },
   ]
+
+  // TextGenerateEffect
+  const paragraphOne =
+    'Residential, Commercial, Marine & Industrial Contracting Company'
+
+  const paragraphTwo = 'Providing electrical services to the Wellington region'
 
   return (
     <>
@@ -33,39 +40,21 @@ export default function Hero() {
           />
           <source src="/video/hero-video.mp4" type="video/mp4" />
         </video>
-        <div className="absolute pt-48 md:pt-72 2xl:pt-96 2xl:mt-56 px-8 md:px-16 2xl:px-60 ">
+        <div className="absolute pt-48 md:pt-72 2xl:pt-96 2xl:mt-56 px-8 md:px-16 2xl:px-60">
           <h1>
             <TypewriterEffect words={mainHeader} />
           </h1>
           <div className="text-white md:text-left text-2xl 2xl:text-3xl px-4 pt-6 space-y-6">
-            <motion.p
-              initial={{ opacity: 0, x: -20 }}
-              transition={{
-                duration: 1.8,
-                delay: 2.4,
-              }}
-              whileInView={{ x: 0, opacity: 1 }}
-            >
-              Residential, Commercial, Marine & Industrial Contracting Company
-            </motion.p>
-            <motion.p
-              initial={{ opacity: 0, x: -25 }}
-              transition={{
-                duration: 1.8,
-                delay: 3,
-              }}
-              whileInView={{ x: 0, opacity: 1 }}
-            >
-              Providing <span className="text-amber-600">electrical</span>{' '}
-              services to the Wellington region
-            </motion.p>
+            <TextGenerateEffect words={paragraphOne} />
+            <TextGenerateEffect words={paragraphTwo} initialDelay={3500} />
           </div>
+
           <motion.div
             className="flex pt-10 md:pt-6 ps-2 space-x-6 md:space-x-10"
             initial={{ opacity: 0, x: -30 }}
             transition={{
               duration: 1.8,
-              delay: 3.4,
+              delay: 5.5,
             }}
             whileInView={{ x: 0, opacity: 1 }}
           >
