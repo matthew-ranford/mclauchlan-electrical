@@ -1,6 +1,7 @@
 'use client'
 
-import { TypewriterEffect } from '@/components/ui/typewrite-effect'
+import { TypewriterEffect } from '@/components/ui/typewriter-effect'
+import { MovingBorderButton } from '@/components/ui/moving-border'
 import { motion } from 'framer-motion'
 
 export default function Hero() {
@@ -59,6 +60,22 @@ export default function Hero() {
               services to the Wellington region
             </motion.p>
           </div>
+          <motion.div
+            className="flex pt-10 md:pt-6 ps-2 space-x-6 md:space-x-10"
+            initial={{ opacity: 0, x: -30 }}
+            transition={{
+              duration: 1.8,
+              delay: 3.4,
+            }}
+            whileInView={{ x: 0, opacity: 1 }}
+          >
+            <MovingBorderButton href="#" borderRadius="2.5rem" className="">
+              <span className="text-lg">Services ⚡</span>
+            </MovingBorderButton>
+            <MovingBorderButton href="#" borderRadius="2.5rem" className="">
+              <span className="text-lg">Contact 📞</span>
+            </MovingBorderButton>
+          </motion.div>
         </div>
       </div>
     </>
