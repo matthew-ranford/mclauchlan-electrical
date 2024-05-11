@@ -56,7 +56,7 @@ export default function Hero() {
               duration: 1.8,
               delay: 5.5,
             }}
-            whileInView={{ x: 0, opacity: 1 }}
+            animate={{ x: 0, opacity: 1 }}
           >
             <MovingBorderButton href="#" borderRadius="2.5rem" className="">
               <span className="text-lg">Services ⚡</span>
