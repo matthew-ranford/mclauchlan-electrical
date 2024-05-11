@@ -26,7 +26,7 @@ export default function Hero() {
 
   return (
     <>
-      <div className="hero-wrapper">
+      <main className="hero-wrapper">
         <video
           autoPlay={true}
           loop={true}
@@ -66,7 +66,7 @@ export default function Hero() {
             </MovingBorderButton>
           </motion.div>
         </div>
-      </div>
+      </main>
     </>
   )
 }
