@@ -72,3 +72,9 @@ export default function Hero() {
 }
 
 // checkout height for when you rotate dimensions on phone,ipad etc. might have to move padding up a little bit - currently cutting off second piece of text
+
+// Try linear-gradient for hero video
+// style={{
+//   background:
+//     'linear-gradient(180deg, var(--slate-800), var(--slate-900)',
+// }}

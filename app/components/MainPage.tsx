@@ -2,6 +2,7 @@
 import { BackgroundGradient } from '@/components/ui/background-gradient'
 import { MovingBorderButton } from '@/components/ui/moving-border'
 import { TextGenerateEffect } from '@/components/ui/text-generate-effect'
+import { InfiniteMovingCards } from '@/components/ui/infinite-moving-cards'
 
 import Image from 'next/image'
 
@@ -10,6 +11,28 @@ export default function MainPage() {
   const paragraphOne = 'We provide a high standard of electrical services.'
 
   const paragraphTwo = 'We are reliable and efficient.'
+
+  // InfiniteMovingCards
+  const testimonials = [
+    {
+      quote:
+        'My company works closely with McLauchlan Eletrical and we have been impressed with their communication, efficency, work quality and professsionalism.',
+      name: 'Nathan',
+      title: '',
+    },
+    {
+      quote:
+        'We have engaged McLauchlan Eletrical to carry out eletrical works on various alterations we have made in our building. We must say that the service was excellent, attendance to review the work abd submit the quote was very fast, pricing extremely competitive and all site staff were friendly, time-efficient and left the areas clean and tidy when complete.',
+      name: 'PFMB Properties Ltd',
+      title: '',
+    },
+    {
+      quote:
+        'I highly recommend McLauchlan Eletrical to anyone wanting eletrical work carried out by a professional, competitive, competent and qualified company who offer advice and options, provide fast service and all works carried out are done to a high standard.',
+      name: 'Megan',
+      title: '',
+    },
+  ]
 
   return (
     <>
@@ -100,9 +123,17 @@ export default function MainPage() {
             <TextGenerateEffect words={paragraphTwo} initialDelay={3500} />
           </div>
         </div>
+        <div className="mt-32">
+          <InfiniteMovingCards
+            items={testimonials}
+            direction="left"
+            speed="normal"
+          />
+        </div>
       </section>
     </>
   )
 }
 
 // Look at maybe putting images in the services cards
+// Try and make it so the textgenerateffect renders when its in view, not on page load
