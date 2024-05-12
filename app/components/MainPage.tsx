@@ -107,6 +107,7 @@ export default function MainPage() {
           </MovingBorderButton>
         </div>
 
+        {/* Video section */}
         <div className="main-page-video-wrapper mt-20">
           <video
             autoPlay={true}
@@ -123,6 +124,8 @@ export default function MainPage() {
             <TextGenerateEffect words={paragraphTwo} initialDelay={3500} />
           </div>
         </div>
+
+        {/* Moving cards */}
         <div className="mt-20">
           <InfiniteMovingCards
             items={testimonials}
@@ -131,6 +134,7 @@ export default function MainPage() {
           />
         </div>
 
+        {/* Footer */}
         <div className="mt-20 pt-10 pb-10 bg-stone-800 rounded-2xl border text-white flex flex-col items-center">
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-4">
             <div className="text-center lg:pe-20 my-auto">
