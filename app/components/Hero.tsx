@@ -38,7 +38,11 @@ export default function Hero() {
             kind="captions"
             label="Video animation of houses with lights on outside"
           />
-          <source src="/video/hero-video.mp4" type="video/mp4" />
+          <source
+            src="/video/hero-video.mp4"
+            type="video/mp4"
+            className="full-screen-video"
+          />
         </video>
         <div className="absolute pt-48 md:pt-72 2xl:pt-96 2xl:mt-56 px-8 md:px-16 2xl:px-60">
           <h1>
@@ -74,7 +78,26 @@ export default function Hero() {
 // checkout height for when you rotate dimensions on phone,ipad etc. might have to move padding up a little bit - currently cutting off second piece of text
 
 // Try linear-gradient for hero video
+
 // style={{
 //   background:
 //     'linear-gradient(180deg, var(--slate-800), var(--slate-900)',
 // }}
+
+// Tried a test <div> round the Hero component in the page component and it worked:
+
+// .test::after {
+//   content: '';
+//   position: absolute;
+//   top: 0;
+//   left: 0;
+//   width: 100%;
+//   height: 89%;
+//   background-image: linear-gradient(
+//     180deg,
+//     rgba(25, 26, 20, 0.4) 0%,
+//     rgba(25, 26, 20, 0.35) 80%
+//   );
+// }
+
+// bg-black, opacity-50 behind the paragraphs?

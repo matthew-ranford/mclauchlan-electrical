@@ -36,7 +36,7 @@ export default function MainPage() {
 
   return (
     <>
-      <section className="pt-28 pb-20">
+      <section className="pt-28 ">
         <div className="pb-10">
           <h1 className="text-center text-5xl font-bold">Our Services</h1>
         </div>
@@ -123,12 +123,47 @@ export default function MainPage() {
             <TextGenerateEffect words={paragraphTwo} initialDelay={3500} />
           </div>
         </div>
-        <div className="mt-32">
+        <div className="mt-20">
           <InfiniteMovingCards
             items={testimonials}
             direction="left"
             speed="normal"
           />
+        </div>
+
+        <div className="mt-20 pt-10 pb-10 bg-stone-800 rounded-2xl border text-white flex flex-col items-center">
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-4">
+            <div className="text-center lg:pe-20 my-auto">
+              <h2 className="text-2xl 2xl:text-4xl text-amber-600 font-bold pb-6 pl-4">
+                Contact
+              </h2>
+              <ul className="text-lg 2xl:text-xl text-sky-700 space-y-4">
+                <li>📞 027 211 0807</li>
+                <li>📧 sam@mclauchlaneletrical.co.nz</li>
+              </ul>
+            </div>
+            <div className="flex justify-center items-center pt-10 lg:pt-0 pl-0 lg:pl-10">
+              <Image
+                src="/images/logo.png"
+                width={250}
+                height={85}
+                alt="Company Logo"
+                priority={true}
+              />
+            </div>
+            <div className="text-center lg:ps-20 my-auto">
+              <h2 className="text-2xl 2xl:text-4xl text-amber-600 font-bold pb-6 lg:pt-24 pl-4">
+                Navigation
+              </h2>
+              <ul className="text-lg 2xl:text-xl text-sky-700 space-y-2">
+                <li>🏠 Home</li>
+                <li>⚡ Services</li>
+                <li>👨🏽‍👨🏽‍👦🏽‍👦🏽 Meet The Team</li>
+                <li>🖼️ Gallery</li>
+                <li>📞 Contact</li>
+              </ul>
+            </div>
+          </div>
         </div>
       </section>
     </>
