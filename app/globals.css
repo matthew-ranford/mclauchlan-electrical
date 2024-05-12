@@ -57,3 +57,9 @@ body {
   object-fit: cover;
   /* opacity: 0.9; */
 }
+
+.main-page-video-wrapper {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+}

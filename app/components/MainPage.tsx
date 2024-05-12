@@ -1,10 +1,16 @@
 'use client'
 import { BackgroundGradient } from '@/components/ui/background-gradient'
 import { MovingBorderButton } from '@/components/ui/moving-border'
+import { TextGenerateEffect } from '@/components/ui/text-generate-effect'
 
 import Image from 'next/image'
 
 export default function MainPage() {
+  // TextGenerateEffect
+  const paragraphOne = 'We provide a high standard of electrical services.'
+
+  const paragraphTwo = 'We are reliable and efficient.'
+
   return (
     <>
       <section className="pt-28 pb-20">
@@ -77,7 +83,26 @@ export default function MainPage() {
             <span className="text-md md:text-lg">Learn More ➡️</span>
           </MovingBorderButton>
         </div>
+
+        <div className="main-page-video-wrapper mt-20">
+          <video
+            autoPlay={true}
+            loop={true}
+            playsInline={true}
+            muted={true}
+            className="full-screen-video"
+          >
+            <track kind="captions" label="Video animation of a lightbulb" />
+            <source src="/video/main-page-video.mp4" type="video/mp4" />
+          </video>
+          <div className="absolute pt-48 md:pt-72 2xl:pt-96 2xl:mt-56 px-8 md:px-16 2xl:px-60 text-black md:text-left text-2xl 2xl:text-3xl space-y-6 2xl:space-y-10">
+            <TextGenerateEffect words={paragraphOne} />
+            <TextGenerateEffect words={paragraphTwo} initialDelay={3500} />
+          </div>
+        </div>
       </section>
     </>
   )
 }
+
+// Look at maybe putting images in the services cards
