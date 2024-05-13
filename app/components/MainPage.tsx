@@ -36,7 +36,7 @@ export default function MainPage() {
 
   return (
     <>
-      <section className="pt-28 ">
+      <section className="pt-28">
         <div className="pb-10">
           <h1 className="text-center text-5xl font-bold">Our Services</h1>
         </div>
