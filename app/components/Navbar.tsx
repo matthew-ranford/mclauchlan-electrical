@@ -23,7 +23,7 @@ export default function Navbar() {
     <>
       <nav className="md:flex md:justify-between md:items-center text-stone-400 navbar-container backdrop-blur-lg md:backdrop-blur-none">
         <div className="flex justify-between items-center ps-4 sm:ps-2 md:ps-6">
-          <a href="#home">
+          <Link href="/">
             <Image
               src="/images/logo.png"
               width={220}
@@ -31,7 +31,7 @@ export default function Navbar() {
               alt="Company Logo"
               priority={true}
             />
-          </a>
+          </Link>
           <span className="md:hidden pe-4">
             <button
               className={`hamburger hamburger--collapse ${
