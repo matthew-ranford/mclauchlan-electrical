@@ -8,8 +8,8 @@ export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false)
 
   const navLinks = [
-    { href: '#home', text: 'Home' },
-    { href: '#services', text: 'Services' },
+    { href: '/', text: 'Home' },
+    { href: 'services', text: 'Services' },
     { href: '#meet-the-team', text: 'Meet the Team' },
     { href: '#gallery', text: 'Gallery' },
     { href: '#contact', text: 'Contact' },
@@ -21,7 +21,7 @@ export default function Navbar() {
 
   return (
     <>
-      <nav className="md:flex md:justify-between md:items-center text-white navbar-container backdrop-blur-lg md:backdrop-blur-none">
+      <nav className="md:flex md:justify-between md:items-center text-stone-400 navbar-container backdrop-blur-lg md:backdrop-blur-none">
         <div className="flex justify-between items-center ps-4 sm:ps-2 md:ps-6">
           <a href="#home">
             <Image

@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import { Space_Grotesk } from 'next/font/google'
 import './globals.css'
 import '../node_modules/hamburgers/dist/hamburgers.css'
+import Navbar from './components/Navbar'
 
 const spaceGrotesk = Space_Grotesk({ subsets: ['latin'] })
 
@@ -20,7 +21,10 @@ export default function RootLayout({
       <head>
         <link rel="shortcut icon" type="image/x-icon" href="images/logo.png" />
       </head>
-      <body className={spaceGrotesk.className}>{children}</body>
+      <body className={spaceGrotesk.className}>
+        <Navbar />
+        {children}
+      </body>
     </html>
   )
 }
