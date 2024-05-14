@@ -3,7 +3,7 @@
 import { LampContainer } from '@/components/ui/lamp'
 import { motion } from 'framer-motion'
 
-export default function Gallery() {
+export default function Contact() {
   return (
     <>
       <section>
@@ -19,7 +19,7 @@ export default function Gallery() {
               }}
               className="mt-4 bg-gradient-to-br from-amber-600 to-slate-800 py-4 bg-clip-text text-center tracking-tight text-transparent text-5xl md:text-7xl font-bold"
             >
-              Gallery
+              Contact
             </motion.h1>
           </LampContainer>
         </div>

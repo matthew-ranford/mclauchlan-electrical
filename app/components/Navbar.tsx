@@ -12,7 +12,7 @@ export default function Navbar() {
     { href: 'services', text: 'Services' },
     { href: 'meet-the-team', text: 'Meet the Team' },
     { href: 'gallery', text: 'Gallery' },
-    { href: '#contact', text: 'Contact' },
+    { href: 'contact', text: 'Contact' },
   ]
 
   const toggleMenu = () => {
