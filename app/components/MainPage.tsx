@@ -39,9 +39,11 @@ export default function MainPage() {
     <>
       <section className="pt-28">
         <div className="pb-10">
-          <h1 className="text-center text-5xl font-bold">Our Services</h1>
+          <h1 className="text-center text-4xl md:text-8xl 2xl:text-9xl tracking-tight text-amber-600 font-bold">
+            Our Services
+          </h1>
         </div>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 ps-8 pe-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 ps-8 pe-8 pt-10">
           {/* First service - residential */}
           <BackgroundGradient className="rounded-[22px] p-4 sm:p-10">
             <Image
