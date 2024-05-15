@@ -21,7 +21,7 @@ export default function Navbar() {
 
   return (
     <>
-      <nav className="md:flex md:justify-between md:items-center text-stone-400 navbar-container backdrop-blur-lg md:backdrop-blur-none">
+      <nav className="md:flex md:justify-between md:items-center text-stone-200 navbar-container backdrop-blur-lg md:backdrop-blur-none">
         <div className="flex justify-between items-center ps-4 sm:ps-2 md:ps-6">
           <Link href="/">
             <Image

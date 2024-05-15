@@ -5,6 +5,7 @@ import { TextGenerateEffect } from '@/components/ui/text-generate-effect'
 import { InfiniteMovingCards } from '@/components/ui/infinite-moving-cards'
 
 import Image from 'next/image'
+import Link from 'next/link'
 
 export default function MainPage() {
   // TextGenerateEffect
@@ -41,56 +42,56 @@ export default function MainPage() {
           <h1 className="text-center text-5xl font-bold">Our Services</h1>
         </div>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 ps-8 pe-8">
-          {/* First service */}
+          {/* First service - residential */}
           <BackgroundGradient className="rounded-[22px] p-4 sm:p-10">
             <Image
-              src="/images/logo.png"
+              src="/images/residential.png"
               alt=""
-              height={200}
-              width={200}
-              className="object-contain"
+              height={500}
+              width={500}
+              className="object-contain mx-auto"
             />
             <p className="text-lg sm:text-xl text-black font-bold mt-4 mb-2 text-center pl-1">
               Residential
             </p>
           </BackgroundGradient>
 
-          {/* Second service */}
+          {/* Second service - commercial */}
           <BackgroundGradient className="rounded-[22px] p-4 sm:p-10">
             <Image
-              src="/images/logo.png"
+              src="/images/commercial.png"
               alt=""
-              height={200}
-              width={200}
-              className="object-contain"
+              height={500}
+              width={500}
+              className="object-contain mx-auto"
             />
             <p className="text-lg sm:text-xl text-black font-bold mt-4 mb-2 text-center pl-1">
               Commercial
             </p>
           </BackgroundGradient>
 
-          {/* Third service */}
+          {/* Third service - industrial & marine */}
           <BackgroundGradient className="rounded-[22px] p-4 sm:p-10">
             <Image
-              src="/images/logo.png"
+              src="/images/industrial-and-marine.png"
               alt=""
-              height={200}
-              width={200}
-              className="object-contain"
+              height={500}
+              width={500}
+              className="object-contain mx-auto"
             />
             <p className="text-lg sm:text-xl text-black font-bold mt-4 mb-2 text-center pl-1">
               Industrial & Marine
             </p>
           </BackgroundGradient>
 
-          {/* Fourth service */}
+          {/* Fourth service - heat pump */}
           <BackgroundGradient className="rounded-[22px] p-4 sm:p-10">
             <Image
-              src="/images/logo.png"
+              src="/images/heat-pump.png"
               alt=""
-              height={200}
-              width={200}
-              className="object-contain"
+              height={500}
+              width={500}
+              className="object-contain mx-auto"
             />
             <p className="text-lg sm:text-xl text-black font-bold mt-4 mb-2 text-center pl-1">
               Heat Pump Servicing & Installation
@@ -103,7 +104,9 @@ export default function MainPage() {
             borderRadius="2.5rem"
             className="text-black flex justify-content-center"
           >
-            <span className="text-md md:text-lg">Learn More ➡️</span>
+            <Link href="services">
+              <span className="text-md md:text-lg">Learn More ➡️</span>
+            </Link>
           </MovingBorderButton>
         </div>
 
