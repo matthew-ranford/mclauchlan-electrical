@@ -4,13 +4,15 @@ import { TypewriterEffect } from '@/components/ui/typewriter-effect'
 import { MovingBorderButton } from '@/components/ui/moving-border'
 import { TextGenerateEffect } from '@/components/ui/text-generate-effect'
 import { motion } from 'framer-motion'
+import { leagueSpartan } from '@/fonts'
+import Link from 'next/link'
 
 export default function Hero() {
   // TypeWriteEffect
   const mainHeader = [
     {
       text: 'McLauchlan',
-      className: 'text-blue-900',
+      className: 'text-blue-800',
     },
     {
       text: 'Eletrical',
@@ -44,11 +46,13 @@ export default function Hero() {
             className="full-screen-video"
           />
         </video>
-        <div className="absolute pt-48 md:pt-72 2xl:pt-96 2xl:mt-56 px-8 md:px-16 2xl:px-60">
-          <h1>
-            <TypewriterEffect words={mainHeader} />
-          </h1>
-          <div className="text-white md:text-left text-2xl 2xl:text-3xl px-4 pt-6 space-y-6 2xl:space-y-10">
+        <div className="absolute pt-48 md:pt-60 2xl:pt-96 2xl:mt-56 px-8 md:px-16 2xl:px-60">
+          <div className={leagueSpartan.className}>
+            <h1>
+              <TypewriterEffect words={mainHeader} />
+            </h1>
+          </div>
+          <div className="text-stone-950 md:text-left text-xl md:text-2xl 2xl:text-4xl px-4 pt-6 space-y-6 2xl:space-y-10">
             <TextGenerateEffect words={paragraphOne} />
             <TextGenerateEffect words={paragraphTwo} initialDelay={3500} />
           </div>
@@ -63,10 +67,14 @@ export default function Hero() {
             animate={{ x: 0, opacity: 1 }}
           >
             <MovingBorderButton href="#" borderRadius="2.5rem" className="">
-              <span className="text-lg">Services ⚡</span>
+              <Link href="services">
+                <span className="text-lg">Services ⚡</span>
+              </Link>
             </MovingBorderButton>
             <MovingBorderButton href="#" borderRadius="2.5rem" className="">
-              <span className="text-lg">Contact 📞</span>
+              <Link href="contact">
+                <span className="text-lg">Contact 📞</span>
+              </Link>
             </MovingBorderButton>
           </motion.div>
         </div>

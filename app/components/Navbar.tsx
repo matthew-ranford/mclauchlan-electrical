@@ -21,7 +21,7 @@ export default function Navbar() {
 
   return (
     <>
-      <nav className="md:flex md:justify-between md:items-center text-stone-200 navbar-container backdrop-blur-lg md:backdrop-blur-none">
+      <nav className="md:flex md:justify-between md:items-center text-stone-600 navbar-container backdrop-blur-lg md:backdrop-blur-none">
         <div className="flex justify-between items-center ps-4 sm:ps-2 md:ps-6">
           <Link href="/">
             <Image
@@ -52,7 +52,11 @@ export default function Navbar() {
           }`}
         >
           {navLinks.map((link, index) => (
-            <Link href={link.href} key={index}>
+            <Link
+              href={link.href}
+              key={index}
+              onClick={() => setIsOpen(!isOpen)}
+            >
               <li
                 style={{ listStyle: 'none' }}
                 className="my-4 md:my-0 hover:text-amber-600 md:hover:scale-105"

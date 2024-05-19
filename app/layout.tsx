@@ -1,5 +1,5 @@
 import type { Metadata } from 'next'
-import { Space_Grotesk } from 'next/font/google'
+import { signika } from '@/fonts'
 import './globals.css'
 
 // Navbar toggle
@@ -8,8 +8,6 @@ import '../node_modules/hamburgers/dist/hamburgers.css'
 // Components
 import Navbar from './components/Navbar'
 import Footer from './components/Footer'
-
-const spaceGrotesk = Space_Grotesk({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
   title: 'McLauchlan Eletrical | Residential, Commercial, Marine, & Industrial',
@@ -26,7 +24,7 @@ export default function RootLayout({
       <head>
         <link rel="shortcut icon" type="image/x-icon" href="images/logo.png" />
       </head>
-      <body className={spaceGrotesk.className}>
+      <body className={signika.className}>
         <Navbar />
         {children}
         <Footer />

@@ -3,15 +3,31 @@ import { BackgroundGradient } from '@/components/ui/background-gradient'
 import { MovingBorderButton } from '@/components/ui/moving-border'
 import { TextGenerateEffect } from '@/components/ui/text-generate-effect'
 import { InfiniteMovingCards } from '@/components/ui/infinite-moving-cards'
+import { TypewriterEffectSmooth } from '@/components/ui/typewriter-effect'
 
 import Image from 'next/image'
 import Link from 'next/link'
 
 export default function MainPage() {
   // TextGenerateEffect
-  const paragraphOne = 'We provide a high standard of electrical services.'
+  const paragraphOne = [
+    { text: 'We' },
+    { text: 'provide' },
+    { text: 'a' },
+    { text: 'high' },
+    { text: 'standard' },
+    { text: 'of' },
+    { text: 'electrical', className: 'text-amber-600' },
+    { text: 'services.' },
+  ]
 
-  const paragraphTwo = 'We are reliable and efficient.'
+  const paragraphTwo = [
+    { text: 'We' },
+    { text: 'are' },
+    { text: 'reliable' },
+    { text: 'and' },
+    { text: 'efficient.' },
+  ]
 
   // InfiniteMovingCards
   const testimonials = [
@@ -23,7 +39,7 @@ export default function MainPage() {
     },
     {
       quote:
-        'We have engaged McLauchlan Eletrical to carry out eletrical works on various alterations we have made in our building. We must say that the service was excellent, attendance to review the work abd submit the quote was very fast, pricing extremely competitive and all site staff were friendly, time-efficient and left the areas clean and tidy when complete.',
+        'We have engaged McLauchlan Eletrical to carry out eletrical works on various alterations we have made in our building. We must say that the service was excellent, attendance to review the work and submit the quote was very fast, pricing extremely competitive and all site staff were friendly, time-efficient and left the areas clean and tidy when complete.',
       name: 'PFMB Properties Ltd',
       title: '',
     },
@@ -53,7 +69,7 @@ export default function MainPage() {
               width={500}
               className="object-contain mx-auto"
             />
-            <p className="text-lg sm:text-xl text-black font-bold mt-4 mb-2 text-center pl-1">
+            <p className="text-lg sm:text-xl text-zinc-300 font-bold mt-4 mb-2 text-center pl-1">
               Residential
             </p>
           </BackgroundGradient>
@@ -67,7 +83,7 @@ export default function MainPage() {
               width={500}
               className="object-contain mx-auto"
             />
-            <p className="text-lg sm:text-xl text-black font-bold mt-4 mb-2 text-center pl-1">
+            <p className="text-lg sm:text-xl text-zinc-300 font-bold mt-4 mb-2 text-center pl-1">
               Commercial
             </p>
           </BackgroundGradient>
@@ -81,7 +97,7 @@ export default function MainPage() {
               width={500}
               className="object-contain mx-auto"
             />
-            <p className="text-lg sm:text-xl text-black font-bold mt-4 mb-2 text-center pl-1">
+            <p className="text-lg sm:text-xl text-zinc-300 font-bold mt-4 mb-2 text-center pl-1">
               Industrial & Marine
             </p>
           </BackgroundGradient>
@@ -95,7 +111,7 @@ export default function MainPage() {
               width={500}
               className="object-contain mx-auto"
             />
-            <p className="text-lg sm:text-xl text-black font-bold mt-4 mb-2 text-center pl-1">
+            <p className="text-lg sm:text-xl text-zinc-300 font-bold mt-4 mb-2 text-center pl-1">
               Heat Pump Servicing & Installation
             </p>
           </BackgroundGradient>
@@ -124,9 +140,9 @@ export default function MainPage() {
             <track kind="captions" label="Video animation of a lightbulb" />
             <source src="/video/main-page-video.mp4" type="video/mp4" />
           </video>
-          <div className="absolute pt-48 md:pt-72 2xl:pt-96 2xl:mt-56 px-8 md:px-16 2xl:px-60 text-black md:text-left text-2xl 2xl:text-3xl space-y-6 2xl:space-y-10">
-            <TextGenerateEffect words={paragraphOne} />
-            <TextGenerateEffect words={paragraphTwo} initialDelay={3500} />
+          <div className="absolute pt-60 md:pt-72 2xl:pt-96 2xl:mt-56 px-8 md:px-16 2xl:px-60">
+            <TypewriterEffectSmooth words={paragraphOne} />
+            <TypewriterEffectSmooth words={paragraphTwo} delay={1.8} />
           </div>
         </div>
 
@@ -145,3 +161,5 @@ export default function MainPage() {
 
 // Look at maybe putting images in the services cards
 // Try and make it so the textgenerateffect renders when its in view, not on page load
+
+// Testing out typewritereffectsmooth - doesnt scale down for mobile, need a delayed on the second paragraph
