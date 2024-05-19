@@ -35,13 +35,41 @@ body {
 /* Navbar to sit on top of the hero component */
 .navbar-container {
   position: absolute;
-  /* padding-inline-start: 2.5rem;
-  padding-inline-end: 2.5rem; */
+  padding-inline-start: 2.5rem;
+  padding-inline-end: 2.5rem;
   top: 0;
   left: 0;
   right: 0;
   z-index: 2;
-  /* position: fixed; */
+}
+
+/* Underline when hover over link */
+.nav-link {
+  position: relative;
+}
+
+.nav-link::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0;
+  height: 2px;
+  background-color: #ca8a04;
+  visibility: hidden;
+  transition: 0.6s ease-in-out;
+}
+
+.nav-link:hover::before {
+  width: 100%;
+  visibility: visible;
+}
+
+@media (max-width: 600px) {
+  .nav-link:hover::before {
+    width: 30%;
+  }
 }
 
 /* Hero video to sit in viewport */

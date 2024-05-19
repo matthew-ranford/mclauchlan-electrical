@@ -21,7 +21,7 @@ export default function Navbar() {
 
   return (
     <>
-      <nav className="md:flex md:justify-between md:items-center text-stone-600 navbar-container backdrop-blur-lg md:backdrop-blur-none">
+      <nav className="md:flex md:justify-between md:items-center text-stone-700 navbar-container backdrop-blur-lg md:backdrop-blur-none">
         <div className="flex justify-between items-center ps-4 sm:ps-2 md:ps-6">
           <Link href="/">
             <Image
@@ -59,7 +59,7 @@ export default function Navbar() {
             >
               <li
                 style={{ listStyle: 'none' }}
-                className="my-4 md:my-0 hover:text-amber-600 md:hover:scale-105"
+                className="my-4 md:my-0 hover:text-amber-600 md:hover:scale-105 nav-link"
               >
                 {link.text}
               </li>
