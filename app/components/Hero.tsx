@@ -38,7 +38,7 @@ export default function Hero() {
         >
           <track
             kind="captions"
-            label="Video animation of houses with lights on outside"
+            label="Video animation of lights turning on in house"
           />
           <source
             src="/video/hero-video.mp4"
@@ -46,19 +46,19 @@ export default function Hero() {
             className="full-screen-video"
           />
         </video>
-        <div className="absolute pt-48 md:pt-60 2xl:pt-96 2xl:mt-56 px-8 md:px-16 2xl:px-60">
+        <div className="absolute pt-80 mt-20 md:mt-0 md:pt-60 2xl:pt-96 2xl:mt-56  px-2 md:px-8 2xl:px-60">
           <div className={leagueSpartan.className}>
             <h1>
               <TypewriterEffect words={mainHeader} />
             </h1>
           </div>
-          <div className="text-stone-950 md:text-left text-xl md:text-2xl 2xl:text-4xl px-4 pt-6 space-y-6 2xl:space-y-10">
+          <div className="text-stone-950 md:text-left text-xl md:text-2xl 2xl:text-4xl ps-0 md:ps-2 pt-4 space-y-4 2xl:space-y-10">
             <TextGenerateEffect words={paragraphOne} />
             <TextGenerateEffect words={paragraphTwo} initialDelay={3500} />
           </div>
 
           <motion.div
-            className="flex pt-10 md:pt-6 2xl:pt-10 ps-2 space-x-6 md:space-x-10"
+            className="flex pt-10 md:pt-6 2xl:pt-10 space-x-6 md:space-x-10"
             initial={{ opacity: 0, x: -30 }}
             transition={{
               duration: 1.8,
