@@ -1,7 +1,42 @@
 'use client'
 
 import { LampContainer } from '@/components/ui/lamp'
+import { LayoutGrid } from '@/components/ui/layout-grid'
 import { motion } from 'framer-motion'
+
+// LayoutGrid
+const cards = [
+  {
+    id: 1,
+    className: 'md:col-span-2',
+    thumbnail: '/images/gallery-0.jpg',
+  },
+  {
+    id: 2,
+    className: 'col-span-1',
+    thumbnail: '/images/gallery-1.jpg',
+  },
+  {
+    id: 3,
+    className: 'col-span-1',
+    thumbnail: '/images/gallery-2.jpg',
+  },
+  {
+    id: 4,
+    className: 'md:col-span-2',
+    thumbnail: '/images/gallery-3.jpg',
+  },
+  {
+    id: 5,
+    className: 'md:col-span-2',
+    thumbnail: '/images/gallery-4.jpg',
+  },
+  {
+    id: 6,
+    className: 'col-span-1',
+    thumbnail: '/images/gallery-5.jpg',
+  },
+]
 
 export default function Gallery() {
   return (
@@ -22,6 +57,9 @@ export default function Gallery() {
               Gallery
             </motion.h1>
           </LampContainer>
+          <div className="h-screen w-full pt-20">
+            <LayoutGrid cards={cards} />
+          </div>
         </div>
       </section>
     </>
