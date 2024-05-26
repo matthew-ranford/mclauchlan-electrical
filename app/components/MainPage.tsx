@@ -1,13 +1,20 @@
 'use client'
+
 import { BackgroundGradient } from '@/components/ui/background-gradient'
 import { MovingBorderButton } from '@/components/ui/moving-border'
-import { TextGenerateEffect } from '@/components/ui/text-generate-effect'
+// import { TextGenerateEffect } from '@/components/ui/text-generate-effect'
 import { InfiniteMovingCards } from '@/components/ui/infinite-moving-cards'
 import { TypewriterEffectSmooth } from '@/components/ui/typewriter-effect'
+import { SparklesCore } from '@/components/ui/sparkles'
 
 import Image from 'next/image'
 import Link from 'next/link'
-import { SparklesCore } from '@/components/ui/sparkles'
+
+// Images for services section
+import residential from '../../public/images/residential.png'
+import commerical from '../../public/images/commercial.png'
+import industrial from '../../public/images/industrial-and-marine.png'
+import heatpump from '../../public/images/heat-pump.png'
 
 export default function MainPage() {
   // TextGenerateEffect
@@ -57,7 +64,7 @@ export default function MainPage() {
       <section className="pt-52 md:pt-40">
         <div className="pb-10 md:pb-2">
           <div className=" w-full flex flex-col items-center justify-center overflow-hidden rounded-md">
-            <h1 className="text-5xl lg:text-9xl font-bold text-center text-amber-600 relative z-20 tracking-wide">
+            <h1 className="text-5xl lg:text-9xl font-bold text-center text-sky-800 relative z-20 tracking-wide">
               Our Services
             </h1>
             <div className="w-[40rem] h-40 relative">
@@ -87,8 +94,8 @@ export default function MainPage() {
           {/* First service - residential */}
           <BackgroundGradient className="rounded-[22px] p-4">
             <Image
-              src="/images/residential.png"
-              alt=""
+              src={residential}
+              alt="white outline of residential home"
               height={500}
               width={500}
               className="object-contain mx-auto"
@@ -101,8 +108,8 @@ export default function MainPage() {
           {/* Second service - commercial */}
           <BackgroundGradient className="rounded-[22px] p-4">
             <Image
-              src="/images/commercial.png"
-              alt=""
+              src={commerical}
+              alt="white outline of commerical buildings"
               height={500}
               width={500}
               className="object-contain mx-auto"
@@ -115,8 +122,8 @@ export default function MainPage() {
           {/* Third service - industrial & marine */}
           <BackgroundGradient className="rounded-[22px] p-4">
             <Image
-              src="/images/industrial-and-marine.png"
-              alt=""
+              src={industrial}
+              alt="white outline of industrial factory"
               height={500}
               width={500}
               className="object-contain mx-auto"
@@ -129,8 +136,8 @@ export default function MainPage() {
           {/* Fourth service - heat pump */}
           <BackgroundGradient className="rounded-[22px] p-4">
             <Image
-              src="/images/heat-pump.png"
-              alt=""
+              src={heatpump}
+              alt="white outline of heatpump"
               height={500}
               width={500}
               className="object-contain mx-auto"
@@ -153,7 +160,7 @@ export default function MainPage() {
         </div>
 
         {/* Video section */}
-        <div className="main-page-video-wrapper mt-32">
+        <div className="main-page-video-wrapper mt-32 2xl:mt-96">
           <video
             autoPlay={true}
             loop={false}
