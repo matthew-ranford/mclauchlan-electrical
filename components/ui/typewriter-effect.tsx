@@ -42,7 +42,7 @@ export const TypewriterEffect = ({
         }
       )
     }
-  }, [isInView])
+  }, [animate, isInView])
   // }, [animate, isInView]) - takes away typescript error
 
   const renderWords = () => {
@@ -82,8 +82,8 @@ export const TypewriterEffect = ({
         transition={{
           duration: 1,
           delay: 0.5,
-          repeat: Infinity,
-          repeatType: 'reverse',
+          // repeat: Infinity,
+          // repeatType: 'reverse',
         }}
         className={cn('', cursorClassName)}
       ></motion.span>
@@ -140,13 +140,12 @@ export const TypewriterEffectSmooth = ({
         className="overflow-hidden pb-2"
         initial={{
           width: '0%',
+          opacity: 0,
         }}
-        whileInView={{
-          width: 'fit-content',
-        }}
+        whileInView={{ opacity: 1, width: 'fit-content' }}
         transition={{
           duration: 3,
-          ease: 'easeInOut',
+          ease: 'linear',
           delay: delay,
         }}
       >
@@ -168,8 +167,8 @@ export const TypewriterEffectSmooth = ({
         }}
         transition={{
           duration: 0.8,
-          repeat: Infinity,
-          repeatType: 'reverse',
+          // repeat: Infinity,
+          // repeatType: 'reverse',
         }}
         className={cn('', cursorClassName)}
       ></motion.span>
