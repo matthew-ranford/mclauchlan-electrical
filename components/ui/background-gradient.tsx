@@ -51,7 +51,7 @@ export const BackgroundGradient = ({
         transition={
           animate
             ? {
-                duration: 2,
+                duration: 3.5,
                 repeat: Infinity,
                 repeatType: 'reverse',
               }
@@ -62,7 +62,7 @@ export const BackgroundGradient = ({
         }}
         className={cn(
           'absolute inset-0 rounded-xl z-[1] will-change-transform',
-          'bg-[radial-gradient(circle_farthest-side_at_0_100%,#d97706,transparent),radial-gradient(circle_farthest-side_at_100%_0,#18181b,transparent),radial-gradient(circle_farthest-side_at_100%_100%,#18181b,transparent),radial-gradient(circle_farthest-side_at_0_0,#d97706,#18181b)]'
+          'bg-[radial-gradient(circle_farthest-side_at_0_100%,#d97706,transparent),radial-gradient(circle_farthest-side_at_100%_0,#1e3a8a,transparent),radial-gradient(circle_farthest-side_at_100%_100%,#1e3a8a,transparent),radial-gradient(circle_farthest-side_at_0_0,#d97706,#1e3a8a)]'
         )}
       />
 

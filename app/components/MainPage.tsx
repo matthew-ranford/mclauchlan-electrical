@@ -93,7 +93,7 @@ export default function MainPage() {
               width={500}
               className="object-contain mx-auto"
             />
-            <p className="text-lg sm:text-xl text-stone-500 font-bold mt-8 mb-2 text-center pl-1">
+            <p className="text-lg sm:text-xl text-stone-900 font-bold mt-8 mb-2 text-center pl-1">
               Residential
             </p>
           </BackgroundGradient>
@@ -107,7 +107,7 @@ export default function MainPage() {
               width={500}
               className="object-contain mx-auto"
             />
-            <p className="text-lg sm:text-xl text-stone-500 font-bold mt-8 mb-2 text-center pl-1">
+            <p className="text-lg sm:text-xl text-stone-900 font-bold mt-8 mb-2 text-center pl-1">
               Commercial
             </p>
           </BackgroundGradient>
@@ -121,7 +121,7 @@ export default function MainPage() {
               width={500}
               className="object-contain mx-auto"
             />
-            <p className="text-lg sm:text-xl text-stone-500 font-bold mt-8 mb-2 text-center pl-1">
+            <p className="text-lg sm:text-xl text-stone-900 font-bold mt-8 mb-2 text-center pl-1">
               Industrial & Marine
             </p>
           </BackgroundGradient>
@@ -135,7 +135,7 @@ export default function MainPage() {
               width={500}
               className="object-contain mx-auto"
             />
-            <p className="text-lg sm:text-xl text-stone-500 font-bold mt-8 mb-2 text-center pl-1">
+            <p className="text-lg sm:text-xl text-stone-900 font-bold mt-8 mb-2 text-center pl-1">
               Heat Pump Servicing & Installation
             </p>
           </BackgroundGradient>
@@ -144,7 +144,7 @@ export default function MainPage() {
           <MovingBorderButton
             href="#"
             borderRadius="2.5rem"
-            className="text-black flex justify-content-center"
+            className="text-stone-900 flex justify-content-center"
           >
             <Link href="services">
               <span className="text-md md:text-lg">Learn More ➡️</span>
