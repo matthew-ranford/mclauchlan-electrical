@@ -10,6 +10,17 @@ export default function Footer() {
     { href: 'contact', text: 'Contact 📞' },
   ]
 
+  const contactDetails = [
+    {
+      href: 'tel: 027 211 0807',
+      text: '📞 027 211 0807',
+    },
+    {
+      href: 'mailto: sam@mclauchlaneletrical.co.nz',
+      text: '📧 sam@mclauchlaneletrical.co.nz',
+    },
+  ]
+
   return (
     <>
       <div className="mt-20 pt-10 pb-14 bg-stone-800 rounded-2xl border flex flex-col items-center">
@@ -18,9 +29,15 @@ export default function Footer() {
             <h2 className="text-2xl 2xl:text-4xl text-amber-600 font-bold pb-6">
               Contact
             </h2>
-            <ul className="text-lg 2xl:text-xl text-stone-400 space-y-4">
-              <li>📞 027 211 0807</li>
-              <li>📧 sam@mclauchlaneletrical.co.nz</li>
+            <ul className="text-lg 2xl:text-xl text-stone-400 space-y-2">
+              {contactDetails.map((link, index) => (
+                <li
+                  key={index}
+                  className="hover:text-sky-900 md:hover:scale-105"
+                >
+                  <Link href={link.href}>{link.text}</Link>
+                </li>
+              ))}
             </ul>
           </div>
           <div className="flex justify-center items-center pt-10 lg:pt-0">
