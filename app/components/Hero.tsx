@@ -12,7 +12,7 @@ export default function Hero() {
   const mainHeader = [
     {
       text: 'McLauchlan',
-      className: 'text-sky-800',
+      className: 'text-sky-900',
     },
     {
       text: 'Eletrical',

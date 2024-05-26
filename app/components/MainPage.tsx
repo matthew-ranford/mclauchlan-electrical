@@ -64,7 +64,7 @@ export default function MainPage() {
       <section className="pt-52 md:pt-40">
         <div className="pb-10 md:pb-2">
           <div className=" w-full flex flex-col items-center justify-center overflow-hidden rounded-md">
-            <h1 className="text-5xl lg:text-9xl font-bold text-center text-sky-800 relative z-20 tracking-wide">
+            <h1 className="text-5xl lg:text-9xl font-bold text-center text-sky-900 relative z-20 tracking-wide">
               Our Services
             </h1>
             <div className="w-[40rem] h-40 relative">
