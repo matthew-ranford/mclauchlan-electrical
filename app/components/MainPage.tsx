@@ -171,7 +171,7 @@ export default function MainPage() {
             <track kind="captions" label="Video animation of a lightbulb" />
             <source src="/video/main-page-video.mp4" type="video/mp4" />
           </video>
-          <div className="absolute pt-80 md:pt-96 2xl:pt-96 mt-20 md:mt-14 2xl:mt-96 px-2 md:px-8 2xl:px-60">
+          <div className="absolute pt-64 md:pt-80 2xl:pt-96 mt-20 md:mt-14 2xl:mt-96 px-2 md:px-8 2xl:px-60">
             <TypewriterEffectSmooth words={paragraphOne} />
             <TypewriterEffectSmooth words={paragraphTwo} delay={1.8} />
           </div>
