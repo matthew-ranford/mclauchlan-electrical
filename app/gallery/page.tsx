@@ -4,37 +4,45 @@ import { LampContainer } from '@/components/ui/lamp'
 import { LayoutGrid } from '@/components/ui/layout-grid'
 import { motion } from 'framer-motion'
 
+// Images
+import gallery0 from '../../public/images/gallery/gallery-0.jpg'
+import gallery1 from '../../public/images/gallery/gallery-1.jpg'
+import gallery2 from '../../public/images/gallery/gallery-2.jpg'
+import gallery3 from '../../public/images/gallery/gallery-3.jpg'
+import gallery4 from '../../public/images/gallery/gallery-4.jpg'
+import gallery5 from '../../public/images/gallery/gallery-5.jpg'
+
 // LayoutGrid
 const cards = [
   {
     id: 1,
     className: 'md:col-span-2',
-    thumbnail: '/images/gallery-0.jpg',
+    thumbnail: gallery0,
   },
   {
     id: 2,
     className: 'col-span-1',
-    thumbnail: '/images/gallery-1.jpg',
+    thumbnail: gallery1,
   },
   {
     id: 3,
     className: 'col-span-1',
-    thumbnail: '/images/gallery-2.jpg',
+    thumbnail: gallery2,
   },
   {
     id: 4,
     className: 'md:col-span-2',
-    thumbnail: '/images/gallery-3.jpg',
+    thumbnail: gallery3,
   },
   {
     id: 5,
     className: 'md:col-span-2',
-    thumbnail: '/images/gallery-4.jpg',
+    thumbnail: gallery4,
   },
   {
     id: 6,
     className: 'col-span-1',
-    thumbnail: '/images/gallery-5.jpg',
+    thumbnail: gallery5,
   },
 ]
 
