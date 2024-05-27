@@ -18,7 +18,7 @@ export default function Services() {
                 duration: 0.8,
                 ease: 'easeInOut',
               }}
-              className="-mt-10 bg-gradient-to-br from-amber-600 to-sky-900 bg-clip-text text-center tracking-tight text-transparent text-6xl md:text-8xl font-bold"
+              className="-mt-10 bg-gradient-to-br from-amber-600 to-sky-900 bg-clip-text text-center tracking-tight text-transparent text-6xl md:text-7xl font-bold"
             >
               Services
             </motion.h1>
@@ -43,7 +43,7 @@ export default function Services() {
           </div>
           {/* Residential section */}
           <div className="pt-20 w-full flex flex-col items-center justify-center overflow-hidden rounded-md">
-            <h1 className="text-5xl lg:text-9xl font-bold text-center text-sky-900 relative z-20">
+            <h1 className="text-5xl lg:text-9xl font-bold text-center text-sky-900 relative z-20 tracking-wide">
               Residential
             </h1>
             <div className="w-[40rem] h-40 relative">
@@ -90,7 +90,7 @@ export default function Services() {
 
           {/* Commercial section */}
           <div className="pt-20 w-full flex flex-col items-center justify-center overflow-hidden rounded-md">
-            <h1 className="text-5xl lg:text-9xl font-bold text-center text-sky-900 relative z-20">
+            <h1 className="text-5xl lg:text-9xl font-bold text-center text-sky-900 relative z-20 tracking-wide">
               Commercial
             </h1>
             <div className="w-[40rem] h-40 relative">
@@ -132,7 +132,7 @@ export default function Services() {
 
           {/* Industrial section */}
           <div className="pt-20 w-full flex flex-col items-center justify-center overflow-hidden rounded-md">
-            <h1 className="text-5xl lg:text-9xl font-bold text-center text-sky-900 relative z-20">
+            <h1 className="text-5xl lg:text-9xl font-bold text-center text-sky-900 relative z-20 tracking-wide">
               Industrial
             </h1>
             <div className="w-[40rem] h-40 relative">
@@ -173,7 +173,7 @@ export default function Services() {
 
           {/* Heat pump section */}
           <div className="pt-20 w-full flex flex-col items-center justify-center overflow-hidden rounded-md">
-            <h1 className="text-5xl lg:text-9xl font-bold text-center text-sky-900 relative z-20 ps-2 pe-2">
+            <h1 className="text-5xl lg:text-9xl font-bold text-center text-sky-900 relative z-20 tracking-wide ps-2 pe-2">
               Heat Pump Servicing & Installation
             </h1>
             <div className="w-[40rem] h-40 relative">
