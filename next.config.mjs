@@ -3,7 +3,7 @@ const nextConfig = {
   reactStrictMode: true,
 
   // Add basePath
-  basePath: '/github-pages',
+  basePath: '/mclauchlan-eletrical',
 }
 
 export default nextConfig
