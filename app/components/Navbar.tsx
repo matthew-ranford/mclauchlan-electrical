@@ -4,6 +4,9 @@ import { useState } from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
 
+// Image
+import logo from '../../public/logo.png'
+
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false)
 
@@ -25,7 +28,7 @@ export default function Navbar() {
         <div className="flex justify-between items-center ps-4 sm:ps-2 md:ps-6">
           <Link href="/">
             <Image
-              src="/images/logo.png"
+              src={logo}
               width={220}
               height={85}
               alt="Company Logo"

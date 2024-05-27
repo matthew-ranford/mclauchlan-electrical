@@ -1,9 +1,4 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {
-  reactStrictMode: true,
-
-  // Add basePath
-  basePath: '/mclauchlan-eletrical',
-}
+const nextConfig = {}
 
 export default nextConfig

@@ -41,7 +41,7 @@ export default function Hero() {
             label="Video animation of lights turning on in house"
           />
           <source
-            src="/video/hero-video.mp4"
+            src="/hero-video.mp4"
             type="video/mp4"
             className="full-screen-video"
           />

@@ -1,6 +1,9 @@
 import Image from 'next/image'
 import Link from 'next/link'
 
+// Image
+import logo from '../../public/logo.png'
+
 export default function Footer() {
   const navLinks = [
     { href: '/', text: 'Home 🏠' },
@@ -42,7 +45,7 @@ export default function Footer() {
           </div>
           <div className="flex justify-center items-center pt-10 lg:pt-0">
             <Image
-              src="/images/logo.png"
+              src={logo}
               width={275}
               height={85}
               alt="Company Logo"

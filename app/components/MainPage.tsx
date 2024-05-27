@@ -169,7 +169,7 @@ export default function MainPage() {
             className="full-screen-video"
           >
             <track kind="captions" label="Video animation of a lightbulb" />
-            <source src="/video/main-page-video.mp4" type="video/mp4" />
+            <source src="/main-page-video.mp4" type="video/mp4" />
           </video>
           <div className="absolute pt-72 md:pt-80 2xl:pt-96 mt-20 md:mt-14 2xl:mt-96 px-2 md:px-8 2xl:px-60">
             <TypewriterEffectSmooth words={paragraphOne} />
