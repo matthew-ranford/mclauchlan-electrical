@@ -5,6 +5,10 @@ import { LampContainer } from '@/components/ui/lamp'
 import { SparklesCore } from '@/components/ui/sparkles'
 import { motion } from 'framer-motion'
 
+// Images
+import teamMember0 from '../../public/images/team/sam.png'
+import teamMember1 from '../../public/images/team/steve.png'
+
 export default function MeetTheTeam() {
   return (
     <>
@@ -60,7 +64,7 @@ export default function MeetTheTeam() {
                     <Image
                       alt="team member | sam"
                       className="flex-shrink-0 w-60 h-60 object-cover object-center sm:mb-0 mb-4"
-                      src="/images/sam.png"
+                      src={teamMember0}
                       height={500}
                       width={500}
                     />
@@ -81,7 +85,7 @@ export default function MeetTheTeam() {
                     <Image
                       alt="team member | steve"
                       className="flex-shrink-0 w-60 h-60 object-cover object-center sm:mb-0 mb-4"
-                      src="/images/steve.png"
+                      src={teamMember1}
                       height={500}
                       width={500}
                     />
@@ -103,7 +107,7 @@ export default function MeetTheTeam() {
                     <Image
                       alt="team member | sam"
                       className="flex-shrink-0 w-60 h-60 object-cover object-center sm:mb-0 mb-4"
-                      src="/images/sam.png"
+                      src={teamMember0}
                       height={500}
                       width={500}
                     />
@@ -125,7 +129,7 @@ export default function MeetTheTeam() {
                     <Image
                       alt="team member | steve"
                       className="flex-shrink-0 w-60 h-60 object-cover object-center sm:mb-0 mb-4"
-                      src="/images/steve.png"
+                      src={teamMember1}
                       height={500}
                       width={500}
                     />
