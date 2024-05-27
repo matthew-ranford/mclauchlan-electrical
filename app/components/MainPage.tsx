@@ -82,7 +82,7 @@ export default function MainPage() {
                 maxSize={1}
                 particleDensity={1200}
                 className="w-full h-full"
-                particleColor="#3f6212"
+                particleColor="#b45309"
               />
 
               {/* Radial Gradient to prevent sharp edges */}
