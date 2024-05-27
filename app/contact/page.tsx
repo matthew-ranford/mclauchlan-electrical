@@ -18,7 +18,7 @@ export default function Contact() {
                 duration: 0.8,
                 ease: 'easeInOut',
               }}
-              className="mt-4 bg-gradient-to-br from-amber-600 to-slate-800 py-4 bg-clip-text text-center tracking-tight text-transparent text-5xl md:text-7xl font-bold"
+              className="-mt-10 bg-gradient-to-br from-amber-600 to-sky-900 bg-clip-text text-center tracking-tight text-transparent text-6xl md:text-7xl font-bold"
             >
               Contact
             </motion.h1>
@@ -55,14 +55,19 @@ export default function Contact() {
                     </h2>
                     <a
                       href="mailto:sam@mclauchlaneletrical.co.nz"
-                      className="text-amber-600 hover:text-amber-500 leading-relaxed"
+                      className="text-sky-900 hover:text-amber-500 leading-relaxed"
                     >
                       sam@mclauchlaneletrical.co.nz
                     </a>
                     <h2 className="title-font font-semibold text-black tracking-widest text-xs mt-4">
                       PHONE
                     </h2>
-                    <p className="leading-relaxed">027 211 0807</p>
+                    <a
+                      href="tel: 027 211 0807"
+                      className="text-sky-900 hover:text-amber-500 leading-relaxed"
+                    >
+                      027 211 0807
+                    </a>
                   </div>
                 </div>
               </div>
