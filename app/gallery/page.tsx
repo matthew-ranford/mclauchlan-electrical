@@ -52,7 +52,7 @@ export default function Gallery() {
                 duration: 0.8,
                 ease: 'easeInOut',
               }}
-              className="mt-4 bg-gradient-to-br from-amber-600 to-slate-800 py-4 bg-clip-text text-center tracking-tight text-transparent text-5xl md:text-7xl font-bold"
+              className="-mt-10 bg-gradient-to-br from-amber-600 to-sky-900 bg-clip-text text-center tracking-tight text-transparent text-6xl md:text-7xl font-bold"
             >
               Gallery
             </motion.h1>
