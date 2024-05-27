@@ -22,7 +22,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        <link rel="shortcut icon" type="image/x-icon" href="images/logo.png" />
+        <link
+          rel="shortcut icon"
+          type="image/x-icon"
+          href="images/shortcut-icon.png"
+        />
       </head>
       <body className={signika.className}>
         <Navbar />

@@ -11,10 +11,10 @@ import Image from 'next/image'
 import Link from 'next/link'
 
 // Images for services section
-import residential from '../../public/images/residential.png'
-import commerical from '../../public/images/commercial.png'
-import industrial from '../../public/images/industrial-and-marine.png'
-import heatpump from '../../public/images/heat-pump.png'
+import residential from '../../public/images/services/residential.png'
+import commerical from '../../public/images/services/commercial.png'
+import industrial from '../../public/images/services/industrial-and-marine.png'
+import heatpump from '../../public/images/services/heat-pump.png'
 
 export default function MainPage() {
   // TextGenerateEffect
