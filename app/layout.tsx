@@ -25,7 +25,7 @@ export default function RootLayout({
         <link
           rel="shortcut icon"
           type="image/x-icon"
-          href="/shortcut-icon.png"
+          href="images/shortcut-icon.png"
         />
       </head>
       <body className={signika.className}>
