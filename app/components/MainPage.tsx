@@ -15,6 +15,7 @@ import residential from '../../public/images/services/residential.png'
 import commerical from '../../public/images/services/commercial.png'
 import industrial from '../../public/images/services/industrial-and-marine.png'
 import heatpump from '../../public/images/services/heat-pump.png'
+import { bricolageGrotesque } from '@/fonts'
 
 export default function MainPage() {
   // TextGenerateEffect
@@ -40,22 +41,19 @@ export default function MainPage() {
   // InfiniteMovingCards
   const testimonials = [
     {
-      quote:
-        'My company works closely with McLauchlan Eletrical and we have been impressed with their communication, efficency, work quality and professsionalism.',
-      name: 'Nathan',
-      title: '',
+      name: 'My company works closely with McLauchlan Eletrical and we have been impressed with their communication, efficency, work quality and professionalism.',
+      title: 'Nathan',
+      quote: '⭐⭐⭐⭐⭐',
     },
     {
-      quote:
-        'We have engaged McLauchlan Eletrical to carry out eletrical works on various alterations we have made in our building. We must say that the service was excellent, attendance to review the work and submit the quote was very fast, pricing extremely competitive and all site staff were friendly, time-efficient and left the areas clean and tidy when complete.',
-      name: 'PFMB Properties Ltd',
-      title: '',
+      name: 'We have engaged McLauchlan Eletrical to carry out eletrical works on various alterations we have made in our building. We must say that the service was excellent, attendance to review the work and submit the quote was very fast, pricing extremely competitive and all site staff were friendly, time-efficient and left the areas clean and tidy when complete.',
+      title: 'PFMB Properties Ltd',
+      quote: '⭐⭐⭐⭐⭐',
     },
     {
-      quote:
-        'I highly recommend McLauchlan Eletrical to anyone wanting eletrical work carried out by a professional, competitive, competent and qualified company who offer advice and options, provide fast service and all works carried out are done to a high standard.',
-      name: 'Megan',
-      title: '',
+      name: 'I highly recommend McLauchlan Eletrical to anyone wanting eletrical work carried out by a professional, competitive, competent and qualified company who offer advice and options, provide fast service and all works carried out are done to a high standard.',
+      title: 'Megan',
+      quote: '⭐⭐⭐⭐⭐',
     },
   ]
 
@@ -64,9 +62,11 @@ export default function MainPage() {
       <section className="pt-52 md:pt-40">
         <div className="pb-10 md:pb-2">
           <div className=" w-full flex flex-col items-center justify-center overflow-hidden rounded-md">
-            <h1 className="text-5xl lg:text-7xl 2xl:text-8xl font-bold text-center text-sky-900 relative z-20 tracking-wide">
-              Our Services
-            </h1>
+            <div className={bricolageGrotesque.className}>
+              <h1 className="text-5xl lg:text-7xl 2xl:text-8xl font-bold text-center text-sky-900 relative z-20 tracking-wide">
+                Our <span className="text-amber-600">Services</span>
+              </h1>
+            </div>
             <div className="w-[40rem] h-40 relative">
               {/* Gradients */}
               <div className="absolute inset-x-20 top-0 bg-gradient-to-r from-transparent via-indigo-500 to-transparent h-[2px] w-3/4 blur-sm" />
@@ -186,19 +186,23 @@ export default function MainPage() {
         </div>
 
         {/* Moving cards */}
-        <div className="mt-20">
+        <div className="mt-32 pb-20">
+          <div className="text-center pb-20 ps-2 pe-2">
+            <div className={bricolageGrotesque.className}>
+              <h1 className="text-sky-900 font-bold text-2xl md:text-5xl 2xl:text-6xl tracking-wide">
+                What our <span className="text-amber-600">clients</span> have to
+                say?
+              </h1>
+            </div>
+          </div>
+
           <InfiniteMovingCards
             items={testimonials}
             direction="left"
-            speed="normal"
+            speed="slow"
           />
         </div>
       </section>
     </>
   )
 }
-
-// Look at maybe putting images in the services cards
-// Try and make it so the textgenerateffect renders when its in view, not on page load
-
-// Testing out typewritereffectsmooth - doesnt scale down for mobile, need a delayed on the second paragraph

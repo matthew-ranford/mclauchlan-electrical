@@ -4,7 +4,7 @@ import { TypewriterEffect } from '@/components/ui/typewriter-effect'
 import { MovingBorderButton } from '@/components/ui/moving-border'
 import { TextGenerateEffect } from '@/components/ui/text-generate-effect'
 import { motion } from 'framer-motion'
-import { leagueSpartan } from '@/fonts'
+import { bricolageGrotesque, leagueSpartan } from '@/fonts'
 import Link from 'next/link'
 
 export default function Hero() {
@@ -47,7 +47,7 @@ export default function Hero() {
           />
         </video>
         <div className="absolute pt-80 mt-20 md:mt-0 md:pt-60 2xl:pt-96 2xl:mt-56 px-2 md:px-8 2xl:px-60">
-          <div className={leagueSpartan.className}>
+          <div className={bricolageGrotesque.className}>
             <h1>
               <TypewriterEffect words={mainHeader} />
             </h1>
