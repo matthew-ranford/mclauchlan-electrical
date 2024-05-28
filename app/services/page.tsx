@@ -221,7 +221,7 @@ export default function Services() {
 
           {/* Heat pump section */}
           <div
-            className="pt-20 w-full flex flex-col items-center justify-center overflow-hidden rounded-md"
+            className="pt-24 w-full flex flex-col items-center justify-center overflow-hidden rounded-md"
             id="heatpump-servicing-and-installation"
           >
             <h1 className="text-5xl lg:text-7xl 2xl:text-8xl font-bold text-center text-sky-900 relative z-20 tracking-wide ps-2 pe-2">

@@ -155,7 +155,7 @@ export default function MainPage() {
             </BackgroundGradient>
           </Link>
         </div>
-        <div className="pt-14 text-center">
+        <div className="pt-14 pb-16 text-center">
           <MovingBorderButton
             href="#"
             borderRadius="2.5rem"
