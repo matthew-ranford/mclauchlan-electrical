@@ -32,7 +32,7 @@ export default function MeetTheTeam() {
             <div className="container px-5 pt-20 mx-auto">
               <div className="flex flex-col text-center w-full mb-20">
                 <div className=" w-full flex flex-col items-center justify-center overflow-hidden rounded-md">
-                  <h1 className="text-4xl md:text-5xl lg:text-9xl font-bold text-center text-sky-900 relative z-20 tracking-wide">
+                  <h1 className="text-5xl lg:text-7xl 2xl:text-8xl font-bold text-center text-sky-900 relative z-20 tracking-wide">
                     Our Team
                   </h1>
                   <div className="w-[40rem] h-40 relative">
