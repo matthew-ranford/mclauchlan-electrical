@@ -3,6 +3,7 @@
 import { Tabs, Tab } from '@nextui-org/react'
 import { LampContainer } from '@/components/ui/lamp'
 import { SparklesCore } from '@/components/ui/sparkles'
+import { MovingBorderButton } from '@/components/ui/moving-border'
 import { motion } from 'framer-motion'
 
 export default function Services() {
@@ -27,13 +28,13 @@ export default function Services() {
           <div className="flex flex-wrap justify-center gap-4 pt-10 pe-6">
             <Tabs
               aria-label="Tabs variants"
-              // variant="solid"
+              variant="solid"
               color="warning"
               size="lg"
               isVertical={true}
               defaultSelectedKey="top"
             >
-              <Tab key="top" title={<a href="">Our Services</a>} />
+              <Tab key="top" id="top" title="Our Services" />
               <Tab
                 key="residential"
                 title={<a href="#residential">Residential</a>}
@@ -257,6 +258,13 @@ export default function Services() {
               </p>
             </div>
           </div>
+        </div>
+        <div className="text-center pt-10">
+          <MovingBorderButton borderRadius="2.5rem" className="text-black">
+            <span className="text-md md:text-lg">
+              <a href="#top">Back to top</a>
+            </span>
+          </MovingBorderButton>
         </div>
       </section>
     </>
