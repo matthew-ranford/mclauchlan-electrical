@@ -27,16 +27,33 @@ export default function Services() {
           <div className="flex flex-wrap justify-center gap-4 pt-10 pe-6">
             <Tabs
               aria-label="Tabs variants"
-              variant="bordered"
+              // variant="solid"
               color="warning"
               size="lg"
+              isVertical={true}
+              defaultSelectedKey="top"
             >
-              <Tab key="residential" title="Residential" />
-              <Tab key="commercial" title="Commercial" />
-              <Tab key="industrial" title="Industrial" />
+              <Tab key="top" title={<a href="">Our Services</a>} />
+              <Tab
+                key="residential"
+                title={<a href="#residential">Residential</a>}
+              />
+
+              <Tab
+                key="commercial"
+                title={<a href="#commercial">Commercial</a>}
+              />
+              <Tab
+                key="industrial"
+                title={<a href="#industrial">Industrial</a>}
+              />
               <Tab
                 key="heat pump servicing & installation"
-                title="Heat Pump Servicing & Installation"
+                title={
+                  <a href="#heatpump-servicing-and-installation">
+                    Heat Pump Servicing & Installation
+                  </a>
+                }
               />
             </Tabs>
           </div>
@@ -59,7 +76,10 @@ export default function Services() {
             </div>
           </div>
           {/* Residential section */}
-          <div className="pt-20 w-full flex flex-col items-center justify-center overflow-hidden rounded-md">
+          <div
+            className="pt-20 w-full flex flex-col items-center justify-center overflow-hidden rounded-md"
+            id="residential"
+          >
             <h1 className="text-5xl lg:text-9xl font-bold text-center text-sky-900 relative z-20 tracking-wide">
               Residential
             </h1>
@@ -106,7 +126,10 @@ export default function Services() {
           </div>
 
           {/* Commercial section */}
-          <div className="pt-20 w-full flex flex-col items-center justify-center overflow-hidden rounded-md">
+          <div
+            className="pt-20 w-full flex flex-col items-center justify-center overflow-hidden rounded-md"
+            id="commercial"
+          >
             <h1 className="text-5xl lg:text-9xl font-bold text-center text-sky-900 relative z-20 tracking-wide">
               Commercial
             </h1>
@@ -148,7 +171,10 @@ export default function Services() {
           </div>
 
           {/* Industrial section */}
-          <div className="pt-20 w-full flex flex-col items-center justify-center overflow-hidden rounded-md">
+          <div
+            className="pt-20 w-full flex flex-col items-center justify-center overflow-hidden rounded-md"
+            id="industrial"
+          >
             <h1 className="text-5xl lg:text-9xl font-bold text-center text-sky-900 relative z-20 tracking-wide">
               Industrial
             </h1>
@@ -189,7 +215,10 @@ export default function Services() {
           </div>
 
           {/* Heat pump section */}
-          <div className="pt-20 w-full flex flex-col items-center justify-center overflow-hidden rounded-md">
+          <div
+            className="pt-20 w-full flex flex-col items-center justify-center overflow-hidden rounded-md"
+            id="heatpump-servicing-and-installation"
+          >
             <h1 className="text-5xl lg:text-9xl font-bold text-center text-sky-900 relative z-20 tracking-wide ps-2 pe-2">
               Heat Pump Servicing & Installation
             </h1>
