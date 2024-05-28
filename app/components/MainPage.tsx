@@ -92,60 +92,68 @@ export default function MainPage() {
         </div>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 ps-8 pe-8 pt-10">
           {/* First service - residential */}
-          <BackgroundGradient className="rounded-[22px] p-4">
-            <Image
-              src={residential}
-              alt="white outline of residential home"
-              height={500}
-              width={500}
-              className="object-contain mx-auto"
-            />
-            <p className="text-lg sm:text-xl text-stone-900 font-bold mt-8 mb-2 text-center pl-1">
-              Residential
-            </p>
-          </BackgroundGradient>
+          <Link href="/services#residential">
+            <BackgroundGradient className="rounded-[22px] p-4">
+              <Image
+                src={residential}
+                alt="white outline of residential home"
+                height={500}
+                width={500}
+                className="object-contain mx-auto"
+              />
+              <p className="text-lg sm:text-xl text-stone-900 font-bold mt-8 mb-2 text-center pl-1">
+                Residential
+              </p>
+            </BackgroundGradient>
+          </Link>
 
           {/* Second service - commercial */}
-          <BackgroundGradient className="rounded-[22px] p-4">
-            <Image
-              src={commerical}
-              alt="white outline of commerical buildings"
-              height={500}
-              width={500}
-              className="object-contain mx-auto"
-            />
-            <p className="text-lg sm:text-xl text-stone-900 font-bold mt-8 mb-2 text-center pl-1">
-              Commercial
-            </p>
-          </BackgroundGradient>
+          <Link href="/services#commercial">
+            <BackgroundGradient className="rounded-[22px] p-4">
+              <Image
+                src={commerical}
+                alt="white outline of commerical buildings"
+                height={500}
+                width={500}
+                className="object-contain mx-auto"
+              />
+              <p className="text-lg sm:text-xl text-stone-900 font-bold mt-8 mb-2 text-center pl-1">
+                Commercial
+              </p>
+            </BackgroundGradient>
+          </Link>
 
           {/* Third service - industrial & marine */}
-          <BackgroundGradient className="rounded-[22px] p-4">
-            <Image
-              src={industrial}
-              alt="white outline of industrial factory"
-              height={500}
-              width={500}
-              className="object-contain mx-auto"
-            />
-            <p className="text-lg sm:text-xl text-stone-900 font-bold mt-8 mb-2 text-center pl-1">
-              Industrial & Marine
-            </p>
-          </BackgroundGradient>
+          <Link href="/services#industrial">
+            <BackgroundGradient className="rounded-[22px] p-4">
+              <Image
+                src={industrial}
+                alt="white outline of industrial factory"
+                height={500}
+                width={500}
+                className="object-contain mx-auto"
+              />
+              <p className="text-lg sm:text-xl text-stone-900 font-bold mt-8 mb-2 text-center pl-1">
+                Industrial & Marine
+              </p>
+            </BackgroundGradient>
+          </Link>
 
           {/* Fourth service - heat pump */}
-          <BackgroundGradient className="rounded-[22px] p-4">
-            <Image
-              src={heatpump}
-              alt="white outline of heatpump"
-              height={500}
-              width={500}
-              className="object-contain mx-auto"
-            />
-            <p className="text-lg sm:text-xl text-stone-900 font-bold mt-8 mb-2 text-center pl-1">
-              Heat Pump Servicing & Installation
-            </p>
-          </BackgroundGradient>
+          <Link href="/services#heatpump-servicing-and-installation">
+            <BackgroundGradient className="rounded-[22px] p-4">
+              <Image
+                src={heatpump}
+                alt="white outline of heatpump"
+                height={500}
+                width={500}
+                className="object-contain mx-auto"
+              />
+              <p className="text-lg sm:text-xl text-stone-900 font-bold mt-8 mb-2 text-center pl-1">
+                Heat Pumps
+              </p>
+            </BackgroundGradient>
+          </Link>
         </div>
         <div className="pt-14 text-center">
           <MovingBorderButton
