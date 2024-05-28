@@ -1,5 +1,6 @@
 'use client'
 
+import { Tabs, Tab } from '@nextui-org/react'
 import { LampContainer } from '@/components/ui/lamp'
 import { SparklesCore } from '@/components/ui/sparkles'
 import { motion } from 'framer-motion'
@@ -23,7 +24,23 @@ export default function Services() {
               Services
             </motion.h1>
           </LampContainer>
-          <div className="flex justify-center pt-20">
+          <div className="flex flex-wrap justify-center gap-4 pt-10 pe-6">
+            <Tabs
+              aria-label="Tabs variants"
+              variant="bordered"
+              color="warning"
+              size="lg"
+            >
+              <Tab key="residential" title="Residential" />
+              <Tab key="commercial" title="Commercial" />
+              <Tab key="industrial" title="Industrial" />
+              <Tab
+                key="heat pump servicing & installation"
+                title="Heat Pump Servicing & Installation"
+              />
+            </Tabs>
+          </div>
+          <div className="flex justify-center pt-10">
             <div className="max-w-2xl text-xl 2xl:text-2xl ps-8 pe-6">
               <p className="pt-4">
                 McLauchlan Electrical Ltd established 2018 by Sam McLauchlan who

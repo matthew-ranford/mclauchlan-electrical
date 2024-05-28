@@ -1,3 +1,4 @@
+import { nextui } from '@nextui-org/react'
 import type { Config } from 'tailwindcss'
 
 const defaultTheme = require('tailwindcss/defaultTheme')
@@ -14,7 +15,9 @@ const config: Config = {
     './pages/**/*.{js,ts,jsx,tsx,mdx}',
     './components/**/*.{js,ts,jsx,tsx,mdx}',
     './app/**/*.{js,ts,jsx,tsx,mdx}',
+    './node_modules/@nextui-org/theme/dist/**/*.{js,ts,jsx,tsx}',
   ],
+
   theme: {
     extend: {
       animation: {
@@ -30,8 +33,8 @@ const config: Config = {
       },
     },
   },
-
-  plugins: [addVariablesForColors],
+  // darkMode: 'class',
+  plugins: [addVariablesForColors, nextui()],
 }
 
 // This plugin adds each Tailwind color as a global CSS variable, e.g. var(--gray-200).
