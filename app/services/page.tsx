@@ -25,7 +25,10 @@ export default function Services() {
               Services
             </motion.h1>
           </LampContainer>
-          <div className="flex flex-wrap justify-center gap-4 pt-10 pe-6">
+          <div
+            className="flex flex-wrap justify-center gap-4 pt-10 pe-6"
+            id="our-services"
+          >
             <Tabs
               aria-label="Tabs variants"
               variant="solid"
@@ -33,8 +36,9 @@ export default function Services() {
               size="lg"
               isVertical={true}
               defaultSelectedKey="top"
+              disabledKeys={['top']}
             >
-              <Tab key="top" id="top" title="Our Services" />
+              <Tab key="top" title="Our Services" />
               <Tab
                 key="residential"
                 title={<a href="#residential">Residential</a>}
@@ -78,10 +82,10 @@ export default function Services() {
           </div>
           {/* Residential section */}
           <div
-            className="pt-20 w-full flex flex-col items-center justify-center overflow-hidden rounded-md"
+            className="pt-24 w-full flex flex-col items-center justify-center overflow-hidden rounded-md"
             id="residential"
           >
-            <h1 className="text-5xl lg:text-9xl font-bold text-center text-sky-900 relative z-20 tracking-wide">
+            <h1 className="text-5xl lg:text-7xl 2xl:text-8xl font-bold text-center text-sky-900 relative z-20 tracking-wide">
               Residential
             </h1>
             <div className="w-[40rem] h-40 relative">
@@ -131,7 +135,7 @@ export default function Services() {
             className="pt-20 w-full flex flex-col items-center justify-center overflow-hidden rounded-md"
             id="commercial"
           >
-            <h1 className="text-5xl lg:text-9xl font-bold text-center text-sky-900 relative z-20 tracking-wide">
+            <h1 className="text-5xl lg:text-7xl 2xl:text-8xl font-bold text-center text-sky-900 relative z-20 tracking-wide">
               Commercial
             </h1>
             <div className="w-[40rem] h-40 relative">
@@ -176,7 +180,7 @@ export default function Services() {
             className="pt-20 w-full flex flex-col items-center justify-center overflow-hidden rounded-md"
             id="industrial"
           >
-            <h1 className="text-5xl lg:text-9xl font-bold text-center text-sky-900 relative z-20 tracking-wide">
+            <h1 className="text-5xl lg:text-7xl 2xl:text-8xl font-bold text-center text-sky-900 relative z-20 tracking-wide">
               Industrial
             </h1>
             <div className="w-[40rem] h-40 relative">
@@ -220,7 +224,7 @@ export default function Services() {
             className="pt-20 w-full flex flex-col items-center justify-center overflow-hidden rounded-md"
             id="heatpump-servicing-and-installation"
           >
-            <h1 className="text-5xl lg:text-9xl font-bold text-center text-sky-900 relative z-20 tracking-wide ps-2 pe-2">
+            <h1 className="text-5xl lg:text-7xl 2xl:text-8xl font-bold text-center text-sky-900 relative z-20 tracking-wide ps-2 pe-2">
               Heat Pump Servicing & Installation
             </h1>
             <div className="w-[40rem] h-40 relative">
@@ -262,7 +266,7 @@ export default function Services() {
         <div className="text-center pt-10">
           <MovingBorderButton borderRadius="2.5rem" className="text-black">
             <span className="text-md md:text-lg">
-              <a href="#top">Back to top</a>
+              <a href="#our-services">Back to top</a>
             </span>
           </MovingBorderButton>
         </div>
