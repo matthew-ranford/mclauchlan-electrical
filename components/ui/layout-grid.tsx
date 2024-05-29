@@ -26,10 +26,8 @@ export const LayoutGrid = ({ cards }: { cards: Card[] }) => {
     setSelected(null)
   }
 
-  // Maybe look at changing the grid-cols to 2 for mobile
-
   return (
-    <div className="w-full h-full p-6 grid grid-cols-2 md:grid-cols-4 2xl:grid-cols-3 max-w-7xl mx-auto gap-4 relative">
+    <div className="w-full h-full p-10 grid grid-cols-2 md:grid-cols-4 2xl:grid-cols-3 md:max-w-7xl 2xl:max-w-screen-2xl mx-auto gap-4 relative">
       {cards.map((card, i) => (
         <div key={i} className={cn(card.className, '')}>
           <motion.div
@@ -38,7 +36,7 @@ export const LayoutGrid = ({ cards }: { cards: Card[] }) => {
               card.className,
               'relative overflow-hidden',
               selected?.id === card.id
-                ? 'rounded-xl absolute inset-0 h-1/2 w-full md:w-1/2 m-auto z-50 flex justify-center items-center flex-wrap flex-col'
+                ? 'rounded-xl absolute inset-0 h-1/2 md:h-2/3 2xl:h-1/2 w-full md:w-1/2 2xl:w-2/3 m-auto z-50 flex justify-center items-center flex-wrap flex-col'
                 : lastSelected?.id === card.id
                 ? 'z-40 bg-black rounded-xl h-full w-full cursor-pointer'
                 : 'bg-black rounded-xl h-full w-full cursor-pointer'
@@ -67,11 +65,11 @@ const BlurImage = ({ card }: { card: Card }) => {
   return (
     <Image
       src={card.thumbnail}
-      height="2732"
-      width="1536"
+      height={768}
+      width={1366}
       onLoad={() => setLoaded(true)}
       className={cn(
-        'object-cover object-top absolute inset-0 h-full w-full transition duration-200',
+        'object-cover object-center absolute inset-0 h-full w-full transition duration-200',
         loaded ? 'blur-none' : 'blur-lg'
       )}
       alt="thumbnail"

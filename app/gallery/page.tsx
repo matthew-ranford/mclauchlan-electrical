@@ -11,6 +11,8 @@ import gallery2 from '../../public/images/gallery/gallery-2.jpg'
 import gallery3 from '../../public/images/gallery/gallery-3.jpg'
 import gallery4 from '../../public/images/gallery/gallery-4.jpg'
 import gallery5 from '../../public/images/gallery/gallery-5.jpg'
+import gallery6 from '../../public/images/gallery/gallery-6.jpg'
+import gallery7 from '../../public/images/gallery/gallery-7.jpg'
 
 // LayoutGrid
 const cards = [
@@ -22,27 +24,37 @@ const cards = [
   {
     id: 2,
     className: 'col-span-1',
-    thumbnail: gallery1,
+    thumbnail: gallery3,
   },
   {
     id: 3,
     className: 'col-span-1',
-    thumbnail: gallery2,
+    thumbnail: gallery4,
   },
   {
     id: 4,
     className: 'md:col-span-2',
-    thumbnail: gallery3,
+    thumbnail: gallery1,
   },
   {
     id: 5,
     className: 'md:col-span-2',
-    thumbnail: gallery4,
+    thumbnail: gallery2,
   },
   {
     id: 6,
     className: 'col-span-1',
     thumbnail: gallery5,
+  },
+  {
+    id: 7,
+    className: 'col-span-1',
+    thumbnail: gallery6,
+  },
+  {
+    id: 8,
+    className: 'md:col-span-2',
+    thumbnail: gallery7,
   },
 ]
 
