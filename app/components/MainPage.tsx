@@ -1,21 +1,23 @@
 'use client'
 
+import Image from 'next/image'
+import Link from 'next/link'
+
+// Font
+import { bricolageGrotesque } from '@/fonts'
+
 import { BackgroundGradient } from '@/components/ui/background-gradient'
 import { MovingBorderButton } from '@/components/ui/moving-border'
-// import { TextGenerateEffect } from '@/components/ui/text-generate-effect'
+import { Highlight } from '@/components/hero-highlight'
 import { InfiniteMovingCards } from '@/components/ui/infinite-moving-cards'
 import { TypewriterEffectSmooth } from '@/components/ui/typewriter-effect'
 import { SparklesCore } from '@/components/ui/sparkles'
-
-import Image from 'next/image'
-import Link from 'next/link'
 
 // Images for services section
 import residential from '../../public/images/services/residential.png'
 import commerical from '../../public/images/services/commercial.png'
 import industrial from '../../public/images/services/industrial-and-marine.png'
 import heatpump from '../../public/images/services/heat-pump.png'
-import { bricolageGrotesque } from '@/fonts'
 
 export default function MainPage() {
   // TextGenerateEffect
@@ -186,12 +188,16 @@ export default function MainPage() {
         </div>
 
         {/* Moving cards */}
+
         <div className="mt-32 pb-20">
           <div className="text-center pb-20 ps-2 pe-2">
             <div className={bricolageGrotesque.className}>
-              <h1 className="text-sky-900 font-bold text-2xl md:text-5xl 2xl:text-6xl tracking-wide">
-                What our <span className="text-amber-600">clients</span> have to
-                say?
+              <h1 className="text-stone-900 font-bold text-2xl md:text-5xl 2xl:text-6xl tracking-wide">
+                What our{' '}
+                <Highlight>
+                  <span className="text-amber-600">clients</span>
+                </Highlight>{' '}
+                have to say?
               </h1>
             </div>
           </div>
