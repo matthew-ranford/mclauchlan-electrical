@@ -20,7 +20,7 @@ export default function Services() {
                 duration: 0.8,
                 ease: 'easeInOut',
               }}
-              className="-mt-10 bg-gradient-to-br from-amber-600 to-sky-900 bg-clip-text text-center tracking-tight text-transparent text-6xl md:text-7xl font-bold"
+              className="-mt-10 2xl:-mt-0 2xl:pt-64 bg-gradient-to-br from-amber-600 to-sky-900 bg-clip-text text-center tracking-tight text-transparent text-6xl md:text-7xl font-bold"
             >
               Services
             </motion.h1>
