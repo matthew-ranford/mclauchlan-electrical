@@ -69,7 +69,10 @@ export const TypewriterEffect = ({
   }
   return (
     <div
-      className={cn('text-5xl md:text-9xl font-bold tracking-tight', className)}
+      className={cn(
+        'text-5xl md:text-9xl 2xl:text-[10rem] font-bold tracking-tight',
+        className
+      )}
     >
       {renderWords()}
       <motion.span
