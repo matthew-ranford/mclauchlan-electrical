@@ -61,7 +61,7 @@ export default function MainPage() {
 
   return (
     <>
-      <section className="pt-52 md:pt-40">
+      <section className="pt-52 md:pt-40 2xl:pt-48">
         <div className="pb-10 md:pb-2">
           <div className=" w-full flex flex-col items-center justify-center overflow-hidden rounded-md">
             <div className={bricolageGrotesque.className}>
@@ -161,7 +161,7 @@ export default function MainPage() {
           <MovingBorderButton
             href="#"
             borderRadius="2.5rem"
-            className="text-stone-900 flex justify-content-center"
+            className="flex justify-content-center transition delay-150 hover:bg-amber-600 hover:duration-700 ease-in-out"
           >
             <Link href="services">
               <span className="text-md md:text-lg">Learn More ➡️</span>
@@ -170,7 +170,7 @@ export default function MainPage() {
         </div>
 
         {/* Video section */}
-        <div className="main-page-video-wrapper mt-32 2xl:mt-96">
+        <div className="main-page-video-wrapper mt-32 2xl:mt-72">
           <video
             autoPlay={true}
             loop={false}
@@ -181,7 +181,7 @@ export default function MainPage() {
             <track kind="captions" label="Video animation of a lightbulb" />
             <source src="video/main-page-video.mp4" type="video/mp4" />
           </video>
-          <div className="absolute pt-72 md:pt-80 2xl:pt-96 mt-20 md:mt-14 2xl:mt-96 px-2 md:px-8 2xl:px-60">
+          <div className="absolute pt-72 md:pt-80 2xl:pt-80 mt-20 md:mt-14 2xl:mt-52 px-2 md:px-8 2xl:px-60">
             <TypewriterEffectSmooth words={paragraphOne} />
             <TypewriterEffectSmooth words={paragraphTwo} delay={1.8} />
           </div>
