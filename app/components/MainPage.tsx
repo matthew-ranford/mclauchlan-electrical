@@ -61,7 +61,7 @@ export default function MainPage() {
 
   return (
     <>
-      <section className="pt-52 md:pt-40 2xl:pt-48">
+      <section className="pt-24 sm:pt-36 md:pt-40 2xl:pt-48">
         <div className="pb-10 md:pb-2">
           <div className=" w-full flex flex-col items-center justify-center overflow-hidden rounded-md">
             <div className={bricolageGrotesque.className}>
