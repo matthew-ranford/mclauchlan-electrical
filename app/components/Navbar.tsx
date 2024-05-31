@@ -24,8 +24,14 @@ export default function Navbar() {
 
   return (
     <>
-      <nav className="md:flex md:justify-between md:items-center text-stone-500 navbar-container backdrop-blur-lg md:backdrop-blur-none">
-        <div className="flex justify-between items-center ps-4 sm:ps-2 md:ps-6">
+      <nav
+        className={`lg:flex lg:justify-between lg:items-center text-stone-400 navbar-container lg:bg-transparent rounded-2xl ${
+          isOpen
+            ? 'navbar-open navbar-full-height animate-slideIn'
+            : 'navbar-closed animate-slideOut'
+        }`}
+      >
+        <div className="flex justify-between items-center ps-4 sm:ps-2 md:ps-10">
           <Link href="/">
             <Image
               src={logo}
@@ -35,7 +41,7 @@ export default function Navbar() {
               priority={true}
             />
           </Link>
-          <span className="md:hidden pe-4">
+          <span className="lg:hidden pe-4">
             <button
               className={`hamburger hamburger--collapse ${
                 isOpen ? 'is-active' : ''
@@ -50,8 +56,8 @@ export default function Navbar() {
           </span>
         </div>
         <ul
-          className={`md:flex md:items-center text-center gap-5 text-xl pt-5 md:pt-0 pe-0 md:pe-4 pb-2 md:pb-0 ${
-            isOpen ? '' : 'hidden'
+          className={`lg:flex md:items-center text-center gap-5 text-3xl lg:text-xl pt-20 lg:pt-0 pe-0 md:pe-10 pb-2 md:pb-0 ${
+            isOpen ? 'animate-slideIn' : 'hidden'
           }`}
         >
           {navLinks.map((link, index) => (
@@ -62,7 +68,7 @@ export default function Navbar() {
             >
               <li
                 style={{ listStyle: 'none' }}
-                className="my-4 md:my-0 hover:text-amber-600 md:hover:scale-105 nav-link"
+                className="my-4 hover:text-amber-600 md:hover:scale-105 nav-link"
               >
                 {link.text}
               </li>

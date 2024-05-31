@@ -45,8 +45,8 @@ body {
 /* Navbar to sit on top of the hero component */
 .navbar-container {
   position: absolute;
-  padding-inline-start: 2.5rem;
-  padding-inline-end: 2.5rem;
+  /* padding-inline-start: 2.5rem;
+  padding-inline-end: 2.5rem; */
   top: 0;
   left: 0;
   right: 0;
@@ -78,8 +78,25 @@ body {
 
 @media (max-width: 600px) {
   .nav-link:hover::before {
-    width: 30%;
+    width: 50%;
   }
+}
+
+/* Background colour & transition for responsive navbar */
+.navbar-container {
+  transition: background-color 1.5s ease-in-out;
+}
+
+.navbar-open {
+  background-color: #423e3d;
+}
+
+.navbar-closed {
+  background-color: #292524;
+}
+
+.navbar-full-height {
+  height: 100vh;
 }
 
 /* Hero video to sit in viewport */

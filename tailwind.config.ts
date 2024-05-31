@@ -25,11 +25,23 @@ const config: Config = {
       animation: {
         scroll:
           'scroll var(--animation-duration, 40s) var(--animation-direction, forwards) linear infinite',
+        slideIn: 'slideIn 0.8s forwards',
+        slideOut: 'slideOut 0.3s forwards',
       },
       keyframes: {
         scroll: {
           to: {
             transform: 'translate(calc(-50% - 0.5rem))',
+          },
+        },
+        slideIn: {
+          '0%': { transform: 'translateX(-100%)', backgroundColor: '#292524' },
+          '100%': { transform: 'translateX(0)', backgroundColor: '#423e3d' },
+        },
+        slideOut: {
+          '0%': { transform: 'translateX(100%)', backgroundColor: '#423e3d' },
+          '100%': {
+            transform: 'translateX(0)',
           },
         },
       },
