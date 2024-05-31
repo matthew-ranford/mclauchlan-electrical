@@ -83,20 +83,22 @@ body {
 }
 
 /* Background colour & transition for responsive navbar */
-.navbar-container {
-  transition: background-color 1.5s ease-in-out;
-}
+@media (max-width: 1023px) {
+  .navbar-container {
+    transition: background-color 1.5s ease-in-out;
+  }
 
-.navbar-open {
-  background-color: #423e3d;
-}
+  .navbar-open {
+    background-color: #423e3d;
+  }
 
-.navbar-closed {
-  background-color: #292524;
-}
+  .navbar-closed {
+    background-color: #292524;
+  }
 
-.navbar-full-height {
-  height: 100vh;
+  .navbar-full-height {
+    height: 100vh;
+  }
 }
 
 /* Hero video to sit in viewport */
