@@ -4,7 +4,7 @@ import { TypewriterEffect } from '@/components/ui/typewriter-effect'
 import { MovingBorderButton } from '@/components/ui/moving-border'
 import { TextGenerateEffect } from '@/components/ui/text-generate-effect'
 import { motion } from 'framer-motion'
-import { bricolageGrotesque, leagueSpartan } from '@/fonts'
+import { bricolageGrotesque } from '@/fonts'
 import Link from 'next/link'
 
 export default function Hero() {
@@ -46,13 +46,13 @@ export default function Hero() {
             className="full-screen-video"
           />
         </video>
-        <div className="absolute pt-80 mt-20 md:mt-0 md:pt-60 2xl:pt-72 2xl:mt-44 px-2 md:px-8 2xl:px-10">
+        <div className="absolute pt-52 mt-20 md:mt-0 md:pt-60 2xl:pt-72 2xl:mt-44 px-2 md:px-8 2xl:px-10">
           <div className={bricolageGrotesque.className}>
             <h1>
               <TypewriterEffect words={mainHeader} />
             </h1>
           </div>
-          <div className="text-stone-950 md:text-left text-xl md:text-2xl 2xl:text-4xl ps-0 md:ps-2 pt-8 space-y-4 2xl:space-y-6">
+          <div className="text-stone-500 md:text-left text-xl md:text-2xl 2xl:text-4xl ps-0 md:ps-2 pt-8 space-y-4 2xl:space-y-6">
             <TextGenerateEffect words={paragraphOne} />
             <TextGenerateEffect words={paragraphTwo} initialDelay={3500} />
           </div>
@@ -92,28 +92,3 @@ export default function Hero() {
 }
 
 // checkout height for when you rotate dimensions on phone,ipad etc. might have to move padding up a little bit - currently cutting off second piece of text
-
-// Try linear-gradient for hero video
-
-// style={{
-//   background:
-//     'linear-gradient(180deg, var(--slate-800), var(--slate-900)',
-// }}
-
-// Tried a test <div> round the Hero component in the page component and it worked:
-
-// .test::after {
-//   content: '';
-//   position: absolute;
-//   top: 0;
-//   left: 0;
-//   width: 100%;
-//   height: 89%;
-//   background-image: linear-gradient(
-//     180deg,
-//     rgba(25, 26, 20, 0.4) 0%,
-//     rgba(25, 26, 20, 0.35) 80%
-//   );
-// }
-
-// bg-black, opacity-50 behind the paragraphs?

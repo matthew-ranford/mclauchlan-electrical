@@ -39,7 +39,7 @@ export default function Contact() {
                     opacity: '0.7',
                   }}
                 ></iframe>
-                <div className="bg-white relative flex flex-wrap py-6 rounded shadow-md">
+                <div className="main-background-colour relative flex flex-wrap py-6 rounded shadow-md">
                   <div className="lg:w-1/2 px-6">
                     <h2 className="title-font font-semibold text-black tracking-widest text-xs">
                       ADDRESS
@@ -71,7 +71,7 @@ export default function Contact() {
                   </div>
                 </div>
               </div>
-              <div className="lg:w-1/3 md:w-1/2 bg-white flex flex-col md:ml-auto w-full md:py-8 mt-20 md:mt-0">
+              <div className="lg:w-1/3 md:w-1/2 main-background-colour flex flex-col md:ml-auto w-full md:py-8 mt-20 md:mt-0">
                 <h2 className="text-gray-900 text-xl mb-3 font-medium title-font">
                   Questions? Fill out the form to contact Sam!
                 </h2>
