@@ -52,7 +52,7 @@ export default function Hero() {
               <TypewriterEffect words={mainHeader} />
             </h1>
           </div>
-          <div className="text-stone-500 md:text-left text-xl md:text-2xl 2xl:text-4xl ps-0 md:ps-2 pt-8 space-y-4 2xl:space-y-6">
+          <div className="text-stone-500 lg:text-stone-900 md:text-left text-xl md:text-2xl 2xl:text-4xl ps-0 md:ps-2 pt-8 space-y-4 2xl:space-y-6">
             <TextGenerateEffect words={paragraphOne} />
             <TextGenerateEffect words={paragraphTwo} initialDelay={3500} />
           </div>
