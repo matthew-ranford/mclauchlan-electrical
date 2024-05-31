@@ -181,7 +181,7 @@ export default function MainPage() {
             <track kind="captions" label="Video animation of a lightbulb" />
             <source src="video/main-page-video.mp4" type="video/mp4" />
           </video>
-          <div className="absolute pt-72 md:pt-80 2xl:pt-80 mt-20 md:mt-14 2xl:mt-52 px-2 md:px-8 2xl:px-60">
+          <div className="absolute pt-80 sm:pt-28 md:pt-48 2xl:pt-80 mt-20 md:mt-14 2xl:mt-52 px-2 md:px-8 2xl:px-60">
             <TypewriterEffectSmooth words={paragraphOne} />
             <TypewriterEffectSmooth words={paragraphTwo} delay={1.8} />
           </div>
@@ -189,7 +189,7 @@ export default function MainPage() {
 
         {/* Moving cards */}
 
-        <div className="mt-32 pb-20">
+        <div className="mt-10 md:mt-32 pb-20">
           <div className="text-center pb-20 ps-2 pe-2">
             <div className={bricolageGrotesque.className}>
               <h1 className="text-stone-900 font-bold text-2xl md:text-5xl 2xl:text-6xl tracking-wide">
