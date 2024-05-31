@@ -264,7 +264,10 @@ export default function Services() {
           </div>
         </div>
         <div className="text-center pt-10">
-          <MovingBorderButton borderRadius="2.5rem" className="text-black">
+          <MovingBorderButton
+            borderRadius="2.5rem"
+            className="flex justify-content-center transition delay-150 hover:bg-amber-600 hover:duration-700 ease-in-out"
+          >
             <span className="text-md md:text-lg">
               <a href="#our-services">Back to top</a>
             </span>
