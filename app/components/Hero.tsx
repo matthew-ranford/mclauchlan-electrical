@@ -46,7 +46,7 @@ export default function Hero() {
             className="full-screen-video"
           />
         </video>
-        <div className="absolute mt-20 md:mt-0 pt-52 sm:pt-12 md:pt-36 lg:pt-60 2xl:pt-72 2xl:mt-44 px-2 md:px-8 2xl:px-10">
+        <div className="absolute mt-20 md:mt-0 pt-52 sm:pt-32 md:pt-52 lg:pt-56 2xl:pt-72 2xl:mt-44 px-2 md:px-8 2xl:px-10">
           <div className={bricolageGrotesque.className}>
             <h1>
               <TypewriterEffect words={mainHeader} />
