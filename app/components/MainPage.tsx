@@ -158,15 +158,15 @@ export default function MainPage() {
           </Link>
         </div>
         <div className="pt-14 pb-16 text-center">
-          <MovingBorderButton
-            href="#"
-            borderRadius="2.5rem"
-            className="flex justify-content-center transition delay-150 hover:bg-amber-600 hover:duration-700 ease-in-out"
-          >
-            <Link href="services">
+          <Link href="services">
+            <MovingBorderButton
+              href="#"
+              borderRadius="2.5rem"
+              className="flex justify-content-center transition delay-150 hover:bg-amber-600 hover:duration-700 ease-in-out"
+            >
               <span className="text-md md:text-lg">Learn More ➡️</span>
-            </Link>
-          </MovingBorderButton>
+            </MovingBorderButton>
+          </Link>
         </div>
 
         {/* Video section */}
