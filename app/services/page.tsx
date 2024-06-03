@@ -2,9 +2,13 @@
 
 import { Tabs, Tab } from '@nextui-org/react'
 import { LampContainer } from '@/components/ui/lamp'
-import { SparklesCore } from '@/components/ui/sparkles'
 import { MovingBorderButton } from '@/components/ui/moving-border'
+import { Highlight } from '@/components/ui/hero-highlight'
+
 import { motion } from 'framer-motion'
+
+import { bricolageGrotesque } from '@/fonts'
+import Link from 'next/link'
 
 export default function Services() {
   return (
@@ -20,7 +24,7 @@ export default function Services() {
                 duration: 0.8,
                 ease: 'easeInOut',
               }}
-              className="-mt-10 2xl:pt-72 bg-gradient-to-br from-amber-400 to-amber-600 bg-clip-text text-center tracking-tight text-transparent text-6xl md:text-7xl font-bold"
+              className="-mt-10 2xl:pt-72 bg-gradient-to-br from-amber-500 to-amber-600 bg-clip-text text-center tracking-tight text-transparent text-6xl md:text-7xl font-bold"
             >
               Services
             </motion.h1>
@@ -41,23 +45,38 @@ export default function Services() {
               <Tab key="top" title="Our Services" />
               <Tab
                 key="residential"
-                title={<a href="#residential">Residential</a>}
+                title={
+                  <Link href="#residential" className="text-stone-900">
+                    Residential
+                  </Link>
+                }
               />
 
               <Tab
                 key="commercial"
-                title={<a href="#commercial">Commercial</a>}
+                title={
+                  <Link href="#commercial" className="text-stone-900">
+                    Commercial
+                  </Link>
+                }
               />
               <Tab
                 key="industrial"
-                title={<a href="#industrial">Industrial</a>}
+                title={
+                  <Link href="#industrial" className="text-stone-900">
+                    Industrial
+                  </Link>
+                }
               />
               <Tab
                 key="heat pump servicing & installation"
                 title={
-                  <a href="#heatpump-servicing-and-installation">
+                  <Link
+                    href="#heatpump-servicing-and-installation"
+                    className="text-stone-900"
+                  >
                     Heat Pump Servicing & Installation
-                  </a>
+                  </Link>
                 }
               />
             </Tabs>
@@ -81,34 +100,12 @@ export default function Services() {
             </div>
           </div>
           {/* Residential section */}
-          <div
-            className="pt-24 w-full flex flex-col items-center justify-center overflow-hidden rounded-md"
-            id="residential"
-          >
-            <h1 className="text-5xl lg:text-7xl 2xl:text-8xl font-bold text-center text-sky-900 relative z-20 tracking-wide">
-              Residential
+          <div className={bricolageGrotesque.className} id="residential">
+            <h1 className="text-center font-bold text-3xl md:text-5xl 2xl:text-6xl tracking-wide pt-20">
+              <Highlight>
+                <span className="text-zinc-300">Residential</span>
+              </Highlight>
             </h1>
-            <div className="w-[40rem] h-40 relative">
-              {/* Gradients */}
-              <div className="absolute inset-x-20 top-0 bg-gradient-to-r from-transparent via-indigo-500 to-transparent h-[2px] w-3/4 blur-sm" />
-              <div className="absolute inset-x-20 top-0 bg-gradient-to-r from-transparent via-indigo-500 to-transparent h-px w-3/4" />
-              <div className="absolute inset-x-60 top-0 bg-gradient-to-r from-transparent via-sky-500 to-transparent h-[5px] w-1/4 blur-sm" />
-              <div className="absolute inset-x-60 top-0 bg-gradient-to-r from-transparent via-sky-500 to-transparent h-px w-1/4" />
-
-              {/* Core component */}
-              <SparklesCore
-                id="1"
-                background="transparent"
-                minSize={0.4}
-                maxSize={1}
-                particleDensity={1200}
-                className="w-full h-full"
-                particleColor="#be185d"
-              />
-
-              {/* Radial Gradient to prevent sharp edges */}
-              <div className="absolute inset-0 w-full h-full [mask-image:radial-gradient(350px_200px_at_top,transparent_20%,white)]"></div>
-            </div>
           </div>
           <div className="flex justify-center pt-10">
             <div className="max-w-2xl text-xl 2xl:text-2xl ps-8 pe-6">
@@ -131,34 +128,12 @@ export default function Services() {
           </div>
 
           {/* Commercial section */}
-          <div
-            className="pt-20 w-full flex flex-col items-center justify-center overflow-hidden rounded-md"
-            id="commercial"
-          >
-            <h1 className="text-5xl lg:text-7xl 2xl:text-8xl font-bold text-center text-sky-900 relative z-20 tracking-wide">
-              Commercial
+          <div className={bricolageGrotesque.className} id="commercial">
+            <h1 className="text-center font-bold text-3xl md:text-5xl 2xl:text-6xl tracking-wide pt-20">
+              <Highlight>
+                <span className="text-zinc-300">Commercial</span>
+              </Highlight>
             </h1>
-            <div className="w-[40rem] h-40 relative">
-              {/* Gradients */}
-              <div className="absolute inset-x-20 top-0 bg-gradient-to-r from-transparent via-indigo-500 to-transparent h-[2px] w-3/4 blur-sm" />
-              <div className="absolute inset-x-20 top-0 bg-gradient-to-r from-transparent via-indigo-500 to-transparent h-px w-3/4" />
-              <div className="absolute inset-x-60 top-0 bg-gradient-to-r from-transparent via-sky-500 to-transparent h-[5px] w-1/4 blur-sm" />
-              <div className="absolute inset-x-60 top-0 bg-gradient-to-r from-transparent via-sky-500 to-transparent h-px w-1/4" />
-
-              {/* Core component */}
-              <SparklesCore
-                id="2"
-                background="transparent"
-                minSize={0.4}
-                maxSize={1}
-                particleDensity={1200}
-                className="w-full h-full"
-                particleColor="#052e16"
-              />
-
-              {/* Radial Gradient to prevent sharp edges */}
-              <div className="absolute inset-0 w-full h-full [mask-image:radial-gradient(350px_200px_at_top,transparent_20%,white)]"></div>
-            </div>
           </div>
           <div className="flex justify-center pt-10">
             <div className="max-w-2xl text-xl 2xl:text-2xl ps-8 pe-6">
@@ -176,34 +151,12 @@ export default function Services() {
           </div>
 
           {/* Industrial section */}
-          <div
-            className="pt-20 w-full flex flex-col items-center justify-center overflow-hidden rounded-md"
-            id="industrial"
-          >
-            <h1 className="text-5xl lg:text-7xl 2xl:text-8xl font-bold text-center text-sky-900 relative z-20 tracking-wide">
-              Industrial
+          <div className={bricolageGrotesque.className} id="industrial">
+            <h1 className="text-center font-bold text-3xl md:text-5xl 2xl:text-6xl tracking-wide pt-20">
+              <Highlight>
+                <span className="text-zinc-300">Industrial</span>
+              </Highlight>
             </h1>
-            <div className="w-[40rem] h-40 relative">
-              {/* Gradients */}
-              <div className="absolute inset-x-20 top-0 bg-gradient-to-r from-transparent via-indigo-500 to-transparent h-[2px] w-3/4 blur-sm" />
-              <div className="absolute inset-x-20 top-0 bg-gradient-to-r from-transparent via-indigo-500 to-transparent h-px w-3/4" />
-              <div className="absolute inset-x-60 top-0 bg-gradient-to-r from-transparent via-sky-500 to-transparent h-[5px] w-1/4 blur-sm" />
-              <div className="absolute inset-x-60 top-0 bg-gradient-to-r from-transparent via-sky-500 to-transparent h-px w-1/4" />
-
-              {/* Core component */}
-              <SparklesCore
-                id="3"
-                background="transparent"
-                minSize={0.4}
-                maxSize={1}
-                particleDensity={1200}
-                className="w-full h-full"
-                particleColor="#b91c1c"
-              />
-
-              {/* Radial Gradient to prevent sharp edges */}
-              <div className="absolute inset-0 w-full h-full [mask-image:radial-gradient(350px_200px_at_top,transparent_20%,white)]"></div>
-            </div>
           </div>
           <div className="flex justify-center pt-10">
             <div className="max-w-2xl text-xl 2xl:text-2xl ps-8 pe-6">
@@ -220,34 +173,18 @@ export default function Services() {
           </div>
 
           {/* Heat pump section */}
+
           <div
-            className="pt-24 w-full flex flex-col items-center justify-center overflow-hidden rounded-md"
+            className={bricolageGrotesque.className}
             id="heatpump-servicing-and-installation"
           >
-            <h1 className="text-5xl lg:text-7xl 2xl:text-8xl font-bold text-center text-sky-900 relative z-20 tracking-wide ps-2 pe-2">
-              Heat Pump Servicing & Installation
+            <h1 className="text-center font-bold text-3xl md:text-5xl 2xl:text-6xl tracking-wide pt-20">
+              <Highlight>
+                <span className="text-zinc-300">
+                  Heat Pump Servicing & Installation
+                </span>
+              </Highlight>
             </h1>
-            <div className="w-[40rem] h-40 relative">
-              {/* Gradients */}
-              <div className="absolute inset-x-20 top-0 bg-gradient-to-r from-transparent via-indigo-500 to-transparent h-[2px] w-3/4 blur-sm" />
-              <div className="absolute inset-x-20 top-0 bg-gradient-to-r from-transparent via-indigo-500 to-transparent h-px w-3/4" />
-              <div className="absolute inset-x-60 top-0 bg-gradient-to-r from-transparent via-sky-500 to-transparent h-[5px] w-1/4 blur-sm" />
-              <div className="absolute inset-x-60 top-0 bg-gradient-to-r from-transparent via-sky-500 to-transparent h-px w-1/4" />
-
-              {/* Core component */}
-              <SparklesCore
-                id="4"
-                background="transparent"
-                minSize={0.4}
-                maxSize={1}
-                particleDensity={1200}
-                className="w-full h-full"
-                particleColor="#2563eb"
-              />
-
-              {/* Radial Gradient to prevent sharp edges */}
-              <div className="absolute inset-0 w-full h-full [mask-image:radial-gradient(350px_200px_at_top,transparent_20%,white)]"></div>
-            </div>
           </div>
           <div className="flex justify-center pt-10">
             <div className="max-w-2xl text-xl 2xl:text-2xl ps-8 pe-6">
@@ -264,14 +201,14 @@ export default function Services() {
           </div>
         </div>
         <div className="text-center pt-10">
-          <MovingBorderButton
-            borderRadius="2.5rem"
-            className="flex justify-content-center transition delay-150 hover:bg-amber-600 hover:duration-700 ease-in-out"
-          >
-            <span className="text-md md:text-lg">
-              <a href="#our-services">Back to top</a>
-            </span>
-          </MovingBorderButton>
+          <Link href="#our-services">
+            <MovingBorderButton
+              borderRadius="2.5rem"
+              className="flex justify-content-center transition delay-150 hover:bg-amber-600 hover:duration-700 ease-in-out"
+            >
+              <span className="text-md md:text-lg">Back to top</span>
+            </MovingBorderButton>
+          </Link>
         </div>
       </section>
     </>

@@ -8,7 +8,7 @@ import { bricolageGrotesque } from '@/fonts'
 
 import { BackgroundGradient } from '@/components/ui/background-gradient'
 import { MovingBorderButton } from '@/components/ui/moving-border'
-import { Highlight } from '@/components/hero-highlight'
+import { Highlight } from '@/components/ui/hero-highlight'
 import { InfiniteMovingCards } from '@/components/ui/infinite-moving-cards'
 import { TypewriterEffectSmooth } from '@/components/ui/typewriter-effect'
 import { SparklesCore } from '@/components/ui/sparkles'

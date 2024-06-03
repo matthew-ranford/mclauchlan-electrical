@@ -23,7 +23,7 @@ export default function MeetTheTeam() {
                 duration: 0.8,
                 ease: 'easeInOut',
               }}
-              className="-mt-10 2xl:pt-72 bg-gradient-to-br from-amber-400 to-amber-600 bg-clip-text text-center tracking-tight text-transparent text-6xl md:text-7xl font-bold"
+              className="-mt-10 2xl:pt-72 bg-gradient-to-br from-amber-500 to-amber-600 bg-clip-text text-center tracking-tight text-transparent text-6xl md:text-7xl font-bold"
             >
               Meet the Team
             </motion.h1>
