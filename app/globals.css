@@ -85,15 +85,15 @@ body {
 /* Background colour & transition for responsive navbar */
 @media (max-width: 1023px) {
   .navbar-container {
-    transition: background-color 1.5s ease-in-out;
+    transition: background-color 1.2s ease-in-out;
   }
 
   .navbar-open {
-    background-color: #423e3d;
+    background-color: #534e4d;
   }
 
   .navbar-closed {
-    background-color: #292524;
+    background-color: #3b3634;
   }
 
   .navbar-full-height {

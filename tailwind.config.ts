@@ -25,8 +25,8 @@ const config: Config = {
       animation: {
         scroll:
           'scroll var(--animation-duration, 40s) var(--animation-direction, forwards) linear infinite',
-        slideIn: 'slideIn 0.8s forwards',
-        slideOut: 'slideOut 0.8s forwards',
+        slideIn: 'slideIn 1.2s forwards',
+        slideOut: 'slideOut 1.2s forwards',
       },
       keyframes: {
         scroll: {
@@ -35,11 +35,11 @@ const config: Config = {
           },
         },
         slideIn: {
-          '0%': { transform: 'translateX(-100%)' },
-          '100%': { transform: 'translateX(0)' },
+          '0%': { transform: 'translateX(-20%)', opacity: '0' },
+          '100%': { transform: 'translateX(0)', opacity: '1' },
         },
         slideOut: {
-          '0%': { transform: 'translateX(-100%)' },
+          '0%': { transform: 'translateX(-20%)' },
           '100%': {
             transform: 'translateX(0)',
           },
