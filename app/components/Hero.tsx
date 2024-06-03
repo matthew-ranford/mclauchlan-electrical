@@ -66,24 +66,24 @@ export default function Hero() {
             }}
             animate={{ x: 0, opacity: 1 }}
           >
-            <MovingBorderButton
-              href="#"
-              borderRadius="2.5rem"
-              className="transition delay-150 hover:bg-amber-600 hover:duration-700 ease-in-out"
-            >
-              <Link href="services">
+            <Link href="services">
+              <MovingBorderButton
+                href="#"
+                borderRadius="2.5rem"
+                className="transition delay-150 hover:bg-amber-600 hover:duration-700 ease-in-out"
+              >
                 <span className="text-lg">Services ⚡</span>
-              </Link>
-            </MovingBorderButton>
-            <MovingBorderButton
-              href="#"
-              borderRadius="2.5rem"
-              className="transition delay-150 hover:bg-amber-600 hover:duration-700 ease-in-out"
-            >
-              <Link href="contact">
+              </MovingBorderButton>
+            </Link>
+            <Link href="contact">
+              <MovingBorderButton
+                href="#"
+                borderRadius="2.5rem"
+                className="transition delay-150 hover:bg-amber-600 hover:duration-700 ease-in-out"
+              >
                 <span className="text-lg">Contact 📞</span>
-              </Link>
-            </MovingBorderButton>
+              </MovingBorderButton>
+            </Link>
           </motion.div>
         </div>
       </main>
