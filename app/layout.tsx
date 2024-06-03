@@ -29,8 +29,8 @@ export default function RootLayout({
         />
       </head>
       <body className={signika.className}>
-        <Navbar />
         <div className="main-background-colour">
+          <Navbar />
           {children}
           <Footer />
         </div>
