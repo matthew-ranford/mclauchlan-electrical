@@ -14,12 +14,13 @@ import {
   Button,
   useDisclosure,
 } from '@nextui-org/react'
+import { Peralta } from 'next/font/google'
 
 export const ParallaxScroll = ({
   images,
   className,
 }: {
-  images: string[]
+  images: { src: string; alt: string }[]
   className?: string
 }) => {
   const gridRef = useRef<any>(null)
@@ -29,10 +30,13 @@ export const ParallaxScroll = ({
   })
 
   // Add in modal for each image to be clickable and expand
-  const [selectedImage, setSelectedImage] = useState<string | null>(null)
+  const [selectedImage, setSelectedImage] = useState<{
+    src: string
+    alt: string
+  } | null>(null)
   const { isOpen, onOpen, onOpenChange } = useDisclosure()
 
-  const openModal = (image: string) => {
+  const openModal = (image: { src: string; alt: string }) => {
     setSelectedImage(image)
     onOpen()
   }
@@ -63,11 +67,11 @@ export const ParallaxScroll = ({
           {firstPart.map((el, idx) => (
             <motion.div style={{ y: translateFirst }} key={'grid-1' + idx}>
               <Image
-                src={el}
+                src={el.src}
                 className="h-80 w-full object-cover object-left-top rounded-lg gap-10 !m-0 !p-0 cursor-pointer"
                 height="400"
                 width="400"
-                alt="thumbnail"
+                alt={el.alt}
                 onClick={() => openModal(el)}
               />
             </motion.div>
@@ -77,11 +81,11 @@ export const ParallaxScroll = ({
           {secondPart.map((el, idx) => (
             <motion.div style={{ y: translateSecond }} key={'grid-2' + idx}>
               <Image
-                src={el}
+                src={el.src}
                 className="h-80 w-full object-cover object-left-top rounded-lg gap-10 !m-0 !p-0 cursor-pointer"
                 height="400"
                 width="400"
-                alt="thumbnail"
+                alt={el.alt}
                 onClick={() => openModal(el)}
               />
             </motion.div>
@@ -91,11 +95,11 @@ export const ParallaxScroll = ({
           {thirdPart.map((el, idx) => (
             <motion.div style={{ y: translateThird }} key={'grid-3' + idx}>
               <Image
-                src={el}
+                src={el.src}
                 className="h-80 w-full object-cover object-left-top rounded-lg gap-10 !m-0 !p-0 cursor-pointer"
                 height="400"
                 width="400"
-                alt="thumbnail"
+                alt={el.alt}
                 onClick={() => openModal(el)}
               />
             </motion.div>
@@ -118,11 +122,11 @@ export const ParallaxScroll = ({
               <ModalBody>
                 {selectedImage && (
                   <Image
-                    src={selectedImage}
+                    src={selectedImage.src}
                     className="rounded-lg"
                     height="800"
                     width="800"
-                    alt="enlarged image"
+                    alt={selectedImage.alt}
                   />
                 )}
               </ModalBody>

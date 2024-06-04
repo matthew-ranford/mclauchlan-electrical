@@ -16,22 +16,22 @@ import gallery7 from '../../public/images/gallery/gallery-7.jpg'
 
 // parallax-scroll
 const images = [
-  gallery0,
-  gallery3,
-  gallery4,
-  gallery1,
-  gallery2,
-  gallery5,
-  gallery6,
-  gallery7,
-  gallery0,
-  gallery3,
-  gallery4,
-  gallery1,
-  gallery2,
-  gallery5,
-  gallery6,
-  gallery7,
+  { src: gallery0, alt: 'Gallery Image 0' },
+  { src: gallery3, alt: 'Gallery Image 3' },
+  { src: gallery4, alt: 'Gallery Image 4' },
+  { src: gallery1, alt: 'Gallery Image 1' },
+  { src: gallery2, alt: 'Gallery Image 2' },
+  { src: gallery5, alt: 'Gallery Image 5' },
+  { src: gallery6, alt: 'Gallery Image 6' },
+  { src: gallery7, alt: 'Gallery Image 7' },
+  { src: gallery0, alt: 'Gallery Image 0 again' },
+  { src: gallery3, alt: 'Gallery Image 3 again' },
+  { src: gallery4, alt: 'Gallery Image 4 again' },
+  { src: gallery1, alt: 'Gallery Image 1 again' },
+  { src: gallery2, alt: 'Gallery Image 2 again' },
+  { src: gallery5, alt: 'Gallery Image 5 again' },
+  { src: gallery6, alt: 'Gallery Image 6 again' },
+  { src: gallery7, alt: 'Gallery Image 7 again' },
 ]
 
 export default function Gallery() {
