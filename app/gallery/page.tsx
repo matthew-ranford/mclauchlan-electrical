@@ -1,7 +1,6 @@
 'use client'
 
 import { LampContainer } from '@/components/ui/lamp'
-// import { LayoutGrid } from '@/components/ui/layout-grid'
 import { ParallaxScroll } from '@/components/ui/parallax-scroll'
 import { motion } from 'framer-motion'
 
@@ -18,19 +17,20 @@ import gallery7 from '../../public/images/gallery/gallery-7.jpg'
 // parallax-scroll
 const images = [
   gallery0,
-
   gallery3,
-
   gallery4,
-
   gallery1,
-
   gallery2,
-
   gallery5,
-
   gallery6,
-
+  gallery7,
+  gallery0,
+  gallery3,
+  gallery4,
+  gallery1,
+  gallery2,
+  gallery5,
+  gallery6,
   gallery7,
 ]
 
@@ -38,7 +38,7 @@ export default function Gallery() {
   return (
     <>
       <section>
-        <div className="pb-10">
+        <div className="">
           <LampContainer className="pt-10">
             <motion.h1
               initial={{ opacity: 0.5, y: 100 }}
@@ -53,9 +53,7 @@ export default function Gallery() {
               Gallery
             </motion.h1>
           </LampContainer>
-          <div className="h-screen w-full pt-20">
-            <ParallaxScroll images={images} />
-          </div>
+          <ParallaxScroll images={images} />
         </div>
       </section>
     </>

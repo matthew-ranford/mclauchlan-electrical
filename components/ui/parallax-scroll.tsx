@@ -49,11 +49,14 @@ export const ParallaxScroll = ({
 
   return (
     <div
-      className={cn('h-[40rem] items-start overflow-y-auto w-full', className)}
+      className={cn(
+        'h-[40rem] items-start overflow-y-auto w-full pb-20',
+        className
+      )}
       ref={gridRef}
     >
       <div
-        className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 items-start max-w-5xl mx-auto gap-10 py-40 px-10"
+        className="grid grid-cols-2 lg:grid-cols-3 items-start max-w-5xl mx-auto gap-10 py-20 px-10"
         ref={gridRef}
       >
         <div className="grid gap-10">
@@ -106,16 +109,17 @@ export const ParallaxScroll = ({
         size="3xl"
         backdrop="blur"
         placement="center"
+        className="bg-transparent"
       >
         <ModalContent>
           {(onClose) => (
             <>
-              <ModalHeader className="flex flex-col gap-1"></ModalHeader>
+              <ModalHeader />
               <ModalBody>
                 {selectedImage && (
                   <Image
                     src={selectedImage}
-                    // className="h-80 w-full object-cover object-left-top rounded-lg gap-10 !m-0 !p-0"
+                    className="rounded-lg"
                     height="800"
                     width="800"
                     alt="enlarged image"
@@ -123,7 +127,11 @@ export const ParallaxScroll = ({
                 )}
               </ModalBody>
               <ModalFooter>
-                <Button color="danger" variant="light" onPress={onClose}>
+                <Button
+                  variant="light"
+                  onPress={onClose}
+                  className="text-xl text-stone-900"
+                >
                   Close
                 </Button>
               </ModalFooter>
