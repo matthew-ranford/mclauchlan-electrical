@@ -2,7 +2,7 @@
 import { useScroll, useTransform } from 'framer-motion'
 import { useRef, useState } from 'react'
 import { motion } from 'framer-motion'
-import Image from 'next/image'
+import Image, { StaticImageData } from 'next/image'
 import { cn } from '@/utils/cn'
 
 import {
@@ -14,13 +14,12 @@ import {
   Button,
   useDisclosure,
 } from '@nextui-org/react'
-import { Peralta } from 'next/font/google'
 
 export const ParallaxScroll = ({
   images,
   className,
 }: {
-  images: { src: string; alt: string }[]
+  images: { src: StaticImageData; alt: string }[]
   className?: string
 }) => {
   const gridRef = useRef<any>(null)
@@ -31,12 +30,12 @@ export const ParallaxScroll = ({
 
   // Add in modal for each image to be clickable and expand
   const [selectedImage, setSelectedImage] = useState<{
-    src: string
+    src: StaticImageData
     alt: string
   } | null>(null)
   const { isOpen, onOpen, onOpenChange } = useDisclosure()
 
-  const openModal = (image: { src: string; alt: string }) => {
+  const openModal = (image: { src: StaticImageData; alt: string }) => {
     setSelectedImage(image)
     onOpen()
   }
