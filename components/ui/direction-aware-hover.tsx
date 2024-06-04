@@ -7,12 +7,14 @@ import { cn } from '@/utils/cn'
 
 export const DirectionAwareHover = ({
   imageUrl,
+  alt,
   children,
   childrenClassName,
   imageClassName,
   className,
 }: {
   imageUrl: StaticImageData
+  alt: string
   children: React.ReactNode | string
   childrenClassName?: string
   imageClassName?: string
@@ -87,7 +89,7 @@ export const DirectionAwareHover = ({
             }}
           >
             <Image
-              alt="image"
+              alt={alt}
               className={cn('h-full w-full object-cover', imageClassName)}
               width="1000"
               height="1000"

@@ -64,20 +64,20 @@ export default function MeetTheTeam() {
         </section>
         <div className="flex justify-center items-center">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-10 ">
-            <DirectionAwareHover imageUrl={sam}>
-              <p className="font-bold text-xl">Sam McLauchlan</p>
+            <DirectionAwareHover imageUrl={sam} alt="Sam McLauchlan - owner">
+              <h2 className="font-bold text-xl">Sam McLauchlan</h2>
               <p className="font-bold text-amber-600 text-sm">Owner</p>
             </DirectionAwareHover>
-            <DirectionAwareHover imageUrl={steve}>
-              <p className="font-bold text-xl">Steven Evans</p>
+            <DirectionAwareHover imageUrl={steve} alt="Steven Evans - lapdog">
+              <h2 className="font-bold text-xl">Steven Evans</h2>
               <p className="font-bold text-amber-600 text-sm">Lapdog</p>
             </DirectionAwareHover>
-            <DirectionAwareHover imageUrl={sam}>
-              <p className="font-bold text-xl">Sam McLauchlan</p>
+            <DirectionAwareHover imageUrl={sam} alt="Third employee">
+              <h2 className="font-bold text-xl">Sam McLauchlan</h2>
               <p className="font-bold text-amber-600 text-sm">Owner</p>
             </DirectionAwareHover>
-            <DirectionAwareHover imageUrl={steve}>
-              <p className="font-bold text-xl">Steven Evans</p>
+            <DirectionAwareHover imageUrl={steve} alt="Fourth employee">
+              <h2 className="font-bold text-xl">Steven Evans</h2>
               <p className="font-bold text-amber-600 text-sm">Lapdog</p>
             </DirectionAwareHover>
           </div>
