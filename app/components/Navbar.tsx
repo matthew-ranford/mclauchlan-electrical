@@ -47,6 +47,8 @@ export default function Navbar() {
                 isOpen ? 'is-active' : ''
               }`}
               type="button"
+              aria-label="button"
+              aria-controls="navbar toggle button"
               onClick={toggleMenu}
             >
               <span className="hamburger-box">
