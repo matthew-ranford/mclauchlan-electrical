@@ -1,7 +1,8 @@
 'use client'
 
 import { LampContainer } from '@/components/ui/lamp'
-import { LayoutGrid } from '@/components/ui/layout-grid'
+// import { LayoutGrid } from '@/components/ui/layout-grid'
+import { ParallaxScroll } from '@/components/ui/parallax-scroll'
 import { motion } from 'framer-motion'
 
 // Images
@@ -14,48 +15,23 @@ import gallery5 from '../../public/images/gallery/gallery-5.jpg'
 import gallery6 from '../../public/images/gallery/gallery-6.jpg'
 import gallery7 from '../../public/images/gallery/gallery-7.jpg'
 
-// LayoutGrid
-const cards = [
-  {
-    id: 1,
-    className: 'md:col-span-2',
-    thumbnail: gallery0,
-  },
-  {
-    id: 2,
-    className: 'col-span-1',
-    thumbnail: gallery3,
-  },
-  {
-    id: 3,
-    className: 'col-span-1',
-    thumbnail: gallery4,
-  },
-  {
-    id: 4,
-    className: 'md:col-span-2',
-    thumbnail: gallery1,
-  },
-  {
-    id: 5,
-    className: 'md:col-span-2',
-    thumbnail: gallery2,
-  },
-  {
-    id: 6,
-    className: 'col-span-1',
-    thumbnail: gallery5,
-  },
-  {
-    id: 7,
-    className: 'col-span-1',
-    thumbnail: gallery6,
-  },
-  {
-    id: 8,
-    className: 'md:col-span-2',
-    thumbnail: gallery7,
-  },
+// parallax-scroll
+const images = [
+  gallery0,
+
+  gallery3,
+
+  gallery4,
+
+  gallery1,
+
+  gallery2,
+
+  gallery5,
+
+  gallery6,
+
+  gallery7,
 ]
 
 export default function Gallery() {
@@ -78,7 +54,7 @@ export default function Gallery() {
             </motion.h1>
           </LampContainer>
           <div className="h-screen w-full pt-20">
-            <LayoutGrid cards={cards} />
+            <ParallaxScroll images={images} />
           </div>
         </div>
       </section>
