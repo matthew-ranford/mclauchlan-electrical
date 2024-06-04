@@ -25,7 +25,7 @@ export default function Navbar() {
   return (
     <>
       <nav
-        className={`lg:flex lg:justify-between lg:items-center text-stone-400 navbar-container lg:bg-transparent rounded-2xl ${
+        className={`lg:flex lg:justify-between lg:items-center text-sky-700 navbar-container lg:bg-transparent rounded-2xl ${
           isOpen
             ? 'navbar-open navbar-full-height animate-slideIn'
             : 'navbar-closed animate-slideOut'
