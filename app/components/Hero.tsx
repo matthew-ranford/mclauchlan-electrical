@@ -35,11 +35,8 @@ export default function Hero() {
           playsInline={true}
           muted={true}
           className="full-screen-video"
+          aria-label="video animation of lights turning on in a house, no audio"
         >
-          <track
-            kind="captions"
-            label="Video animation of lights turning on in house"
-          />
           <source
             src="video/hero-video.mp4"
             type="video/mp4"

@@ -177,8 +177,8 @@ export default function MainPage() {
             playsInline={true}
             muted={true}
             className="full-screen-video"
+            aria-label="video animation of lightbulbs swinging and turning on, no audio"
           >
-            <track kind="captions" label="Video animation of a lightbulb" />
             <source src="video/main-page-video.mp4" type="video/mp4" />
           </video>
           <div className="absolute pt-80 sm:pt-28 md:pt-48 2xl:pt-80 mt-20 md:mt-14 2xl:mt-52 px-2 md:px-8 2xl:px-60">
