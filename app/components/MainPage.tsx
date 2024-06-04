@@ -103,9 +103,9 @@ export default function MainPage() {
                 width={500}
                 className="object-contain mx-auto"
               />
-              <p className="text-lg sm:text-xl text-stone-900 font-bold mt-8 mb-2 text-center pl-1">
+              <h2 className="text-lg sm:text-xl text-stone-900 font-bold mt-8 mb-2 text-center pl-1">
                 Residential
-              </p>
+              </h2>
             </BackgroundGradient>
           </Link>
 
@@ -119,9 +119,9 @@ export default function MainPage() {
                 width={500}
                 className="object-contain mx-auto"
               />
-              <p className="text-lg sm:text-xl text-stone-900 font-bold mt-8 mb-2 text-center pl-1">
+              <h2 className="text-lg sm:text-xl text-stone-900 font-bold mt-8 mb-2 text-center pl-1">
                 Commercial
-              </p>
+              </h2>
             </BackgroundGradient>
           </Link>
 
@@ -135,9 +135,9 @@ export default function MainPage() {
                 width={500}
                 className="object-contain mx-auto"
               />
-              <p className="text-lg sm:text-xl text-stone-900 font-bold mt-8 mb-2 text-center pl-1">
+              <h2 className="text-lg sm:text-xl text-stone-900 font-bold mt-8 mb-2 text-center pl-1">
                 Industrial & Marine
-              </p>
+              </h2>
             </BackgroundGradient>
           </Link>
 
@@ -151,9 +151,9 @@ export default function MainPage() {
                 width={500}
                 className="object-contain mx-auto"
               />
-              <p className="text-lg sm:text-xl text-stone-900 font-bold mt-8 mb-2 text-center pl-1">
+              <h2 className="text-lg sm:text-xl text-stone-900 font-bold mt-8 mb-2 text-center pl-1">
                 Heat Pumps
-              </p>
+              </h2>
             </BackgroundGradient>
           </Link>
         </div>
