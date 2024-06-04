@@ -1,81 +1,16 @@
 'use client'
 
-import Image from 'next/image'
 import { LampContainer } from '@/components/ui/lamp'
 import { SparklesCore } from '@/components/ui/sparkles'
+import { DirectionAwareHover } from '@/components/ui/direction-aware-hover'
 import { motion } from 'framer-motion'
 
 // Images
 import teamMember0 from '../../public/images/team/sam.png'
 import teamMember1 from '../../public/images/team/steve.png'
-import { StickyScroll } from '@/components/ui/sticky-scroll-reveal'
 
-const content = [
-  {
-    title: 'Sam McLauchlan - Owner',
-    description:
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus harum quas unde soluta eaque ipsum iste sint facilis adipisci doloribus?',
-    content: (
-      <div className="h-full w-full flex items-center justify-center text-white">
-        <Image
-          src={teamMember0}
-          width={300}
-          height={300}
-          className="h-full w-full object-cover"
-          alt="team member one"
-        />
-      </div>
-    ),
-  },
-  {
-    title: 'Steven Evans - Lapdog',
-    description:
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus harum quas unde soluta eaque ipsum iste sint facilis adipisci doloribus?',
-    content: (
-      <div className="h-full w-full flex items-center justify-center text-white">
-        <Image
-          src={teamMember1}
-          width={300}
-          height={300}
-          className="h-full w-full object-cover"
-          alt="team member two"
-        />
-      </div>
-    ),
-  },
-  {
-    title: 'Sam McLauchlan - Owner',
-    description:
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus harum quas unde soluta eaque ipsum iste sint facilis adipisci doloribus?',
-    content: (
-      <div className="h-full w-full flex items-center justify-center text-white">
-        <Image
-          src={teamMember0}
-          width={300}
-          height={300}
-          className="h-full w-full object-cover"
-          alt="team member one"
-        />
-      </div>
-    ),
-  },
-  {
-    title: 'Steven Evans - Lapdog',
-    description:
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus harum quas unde soluta eaque ipsum iste sint facilis adipisci doloribus?',
-    content: (
-      <div className="h-full w-full flex items-center justify-center text-white">
-        <Image
-          src={teamMember1}
-          width={300}
-          height={300}
-          className="h-full w-full object-cover"
-          alt="team member two"
-        />
-      </div>
-    ),
-  },
-]
+const sam = teamMember0
+const steve = teamMember1
 
 export default function MeetTheTeam() {
   return (
@@ -117,7 +52,7 @@ export default function MeetTheTeam() {
                     maxSize={1}
                     particleDensity={1200}
                     className="w-full h-full"
-                    particleColor="#86198f"
+                    particleColor="#b45309"
                   />
 
                   {/* Radial Gradient to prevent sharp edges */}
@@ -127,8 +62,25 @@ export default function MeetTheTeam() {
             </div>
           </div>
         </section>
-        <div className="p-10">
-          <StickyScroll content={content} />
+        <div className="flex justify-center items-center">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-10 ">
+            <DirectionAwareHover imageUrl={sam}>
+              <p className="font-bold text-xl">Sam McLauchlan</p>
+              <p className="font-bold text-amber-600 text-sm">Owner</p>
+            </DirectionAwareHover>
+            <DirectionAwareHover imageUrl={steve}>
+              <p className="font-bold text-xl">Steven Evans</p>
+              <p className="font-bold text-amber-600 text-sm">Lapdog</p>
+            </DirectionAwareHover>
+            <DirectionAwareHover imageUrl={sam}>
+              <p className="font-bold text-xl">Sam McLauchlan</p>
+              <p className="font-bold text-amber-600 text-sm">Owner</p>
+            </DirectionAwareHover>
+            <DirectionAwareHover imageUrl={steve}>
+              <p className="font-bold text-xl">Steven Evans</p>
+              <p className="font-bold text-amber-600 text-sm">Lapdog</p>
+            </DirectionAwareHover>
+          </div>
         </div>
       </section>
     </>
