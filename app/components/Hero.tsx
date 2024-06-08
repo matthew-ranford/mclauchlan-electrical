@@ -15,7 +15,7 @@ export default function Hero() {
       className: 'text-sky-900',
     },
     {
-      text: 'Eletrical',
+      text: 'Electrical',
       className: 'text-amber-600',
     },
   ]
