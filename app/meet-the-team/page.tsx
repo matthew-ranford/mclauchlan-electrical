@@ -63,7 +63,7 @@ export default function MeetTheTeam() {
           </div>
         </section>
         <div className="flex justify-center items-center">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-10 ">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-10 cursor-pointer lg:cursor-auto">
             <DirectionAwareHover imageUrl={sam} alt="Sam McLauchlan - owner">
               <h2 className="font-bold text-xl">Sam McLauchlan</h2>
               <p className="font-bold text-amber-600 text-sm">Owner</p>
