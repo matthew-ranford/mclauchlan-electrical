@@ -25,7 +25,7 @@ export default function Navbar() {
   return (
     <>
       <nav
-        className={`lg:flex lg:justify-between lg:items-center text-sky-700 navbar-container lg:bg-transparent rounded-2xl ${
+        className={`lg:flex lg:justify-between lg:items-center text-stone-400 navbar-container lg:bg-transparent rounded-2xl ${
           isOpen
             ? 'navbar-open navbar-full-height animate-slideIn'
             : 'navbar-closed animate-slideOut'
@@ -58,7 +58,7 @@ export default function Navbar() {
           </span>
         </div>
         <ul
-          className={`lg:flex md:items-center text-center gap-5 text-3xl lg:text-xl pt-20 lg:pt-0 pe-0 md:pe-10 pb-2 md:pb-0 ${
+          className={`lg:flex md:items-center text-center gap-5 text-3xl sm:text-2xl lg:text-xl pt-20 sm:pt-0 pe-0 md:pe-10 pb-2 md:pb-0 ${
             isOpen ? 'animate-slideIn' : 'hidden'
           }`}
         >
