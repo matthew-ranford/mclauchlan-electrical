@@ -42,6 +42,7 @@ export default function Hero() {
             type="video/mp4"
             className="full-screen-video"
           />
+          <track src="" kind="captions" label="no-audio" />
         </video>
         <div className="absolute mt-20 md:mt-0 pt-52 sm:pt-32 md:pt-52 lg:pt-56 2xl:pt-72 2xl:mt-44 px-2 md:px-8 2xl:px-10">
           <div className={bricolageGrotesque.className}>
