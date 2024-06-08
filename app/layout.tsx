@@ -10,8 +10,9 @@ import Navbar from './components/Navbar'
 import Footer from './components/Footer'
 
 export const metadata: Metadata = {
-  title: 'McLauchlan Eletrical | Residential, Commercial, Marine, & Industrial',
-  description: 'Eletrical Services for the Wellington Region',
+  title:
+    'McLauchlan Electrical | Residential, Commercial, Marine, & Industrial',
+  description: 'Electrical Services for the Wellington Region',
 }
 
 export default function RootLayout({
