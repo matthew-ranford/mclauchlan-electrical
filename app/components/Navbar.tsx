@@ -46,9 +46,10 @@ export default function Navbar() {
               className={`hamburger hamburger--collapse ${
                 isOpen ? 'is-active' : ''
               }`}
-              type="button"
               aria-label="button"
-              aria-controls="navbar toggle button"
+              aria-controls="navbar-dropdown-menu"
+              aria-expanded={isOpen}
+              type="button"
               onClick={toggleMenu}
             >
               <span className="hamburger-box">
@@ -58,6 +59,7 @@ export default function Navbar() {
           </span>
         </div>
         <ul
+          id="navbar-dropdown-menu"
           className={`lg:flex md:items-center text-center gap-5 text-3xl sm:text-2xl lg:text-xl pt-20 sm:pt-0 pe-0 md:pe-10 pb-2 md:pb-0 ${
             isOpen ? 'animate-slideIn' : 'hidden'
           }`}
