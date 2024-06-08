@@ -68,18 +68,34 @@ export default function MeetTheTeam() {
               <h2 className="font-bold text-xl">Sam McLauchlan</h2>
               <p className="font-bold text-amber-600 text-sm">Owner</p>
             </DirectionAwareHover>
+            <div className="below-sm:block to-sm:hidden">
+              <h2 className="font-bold text-xl">Sam McLauchlan</h2>
+              <p className="font-bold text-amber-600 text-sm">Owner</p>
+            </div>
             <DirectionAwareHover imageUrl={steve} alt="Steven Evans - lapdog">
               <h2 className="font-bold text-xl">Steven Evans</h2>
               <p className="font-bold text-amber-600 text-sm">Lapdog</p>
             </DirectionAwareHover>
+            <div className="below-sm:block to-sm:hidden text-right">
+              <h2 className="font-bold text-xl">Steven Evans</h2>
+              <p className="font-bold text-amber-600 text-sm">Lapdog</p>
+            </div>
             <DirectionAwareHover imageUrl={sam} alt="Third employee">
               <h2 className="font-bold text-xl">Sam McLauchlan</h2>
               <p className="font-bold text-amber-600 text-sm">Owner</p>
             </DirectionAwareHover>
+            <div className="below-sm:block to-sm:hidden">
+              <h2 className="font-bold text-xl">Sam McLauchlan</h2>
+              <p className="font-bold text-amber-600 text-sm">Owner</p>
+            </div>
             <DirectionAwareHover imageUrl={steve} alt="Fourth employee">
               <h2 className="font-bold text-xl">Steven Evans</h2>
               <p className="font-bold text-amber-600 text-sm">Lapdog</p>
             </DirectionAwareHover>
+            <div className="below-sm:block to-sm:hidden text-right">
+              <h2 className="font-bold text-xl">Steven Evans</h2>
+              <p className="font-bold text-amber-600 text-sm">Lapdog</p>
+            </div>
           </div>
         </div>
       </section>

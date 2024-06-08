@@ -45,6 +45,10 @@ const config: Config = {
           },
         },
       },
+      screens: {
+        'below-sm': { max: '480px' },
+        'to-sm': { min: '481px' },
+      },
     },
   },
   // darkMode: 'class',
