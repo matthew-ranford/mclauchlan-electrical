@@ -32,6 +32,22 @@ export const DirectionAwareHover = ({
     if (!ref.current) return
 
     const direction = getDirection(event, ref.current)
+    updateDirection(direction)
+  }
+
+  const handleTouchStart = (event: React.TouchEvent<HTMLDivElement>) => {
+    if (!ref.current) return
+
+    const touch = event.touches[0]
+    const simulatedMouseEvent = {
+      clientX: touch.clientX,
+      clientY: touch.clientY,
+    } as unknown as React.MouseEvent<HTMLDivElement, MouseEvent>
+    const direction = getDirection(simulatedMouseEvent, ref.current)
+    updateDirection(direction)
+  }
+
+  const updateDirection = (direction: number) => {
     console.log('direction', direction)
     switch (direction) {
       case 0:
@@ -53,7 +69,7 @@ export const DirectionAwareHover = ({
   }
 
   const getDirection = (
-    ev: React.MouseEvent<HTMLDivElement, MouseEvent>,
+    ev: { clientX: number; clientY: number },
     obj: HTMLElement
   ) => {
     const { width: w, height: h, left, top } = obj.getBoundingClientRect()
@@ -66,6 +82,7 @@ export const DirectionAwareHover = ({
   return (
     <motion.div
       onMouseEnter={handleMouseEnter}
+      onTouchStart={handleTouchStart}
       ref={ref}
       className={cn(
         'md:h-96 w-60 h-60 md:w-96 rounded-lg overflow-hidden group/card relative',
